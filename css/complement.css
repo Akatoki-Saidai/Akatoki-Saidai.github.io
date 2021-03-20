@@ -1,0 +1,16 @@
+.underline {
+  /* background: linear-gradient(transparent 50%, #CB0A3F 50%); */
+  color: #CB0A3F;
+}
+
+.active-img{
+  width: 150px;
+  margin-bottom: 10px;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.5px;
+}
+
+.img{
+  width:150px;
+}
