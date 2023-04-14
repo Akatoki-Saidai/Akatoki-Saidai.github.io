@@ -1,28 +1,36 @@
-.akatokicolor{
+.akatokicolor {
   color: #D31444;
 }
 
-.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+.cp_qa *,
+.cp_qa *:after,
+.cp_qa *:before {
   font-family: 'FontAwesome', sans-serif;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-.cp_qa dt,.cp_qa dd {
+
+.cp_qa dt,
+.cp_qa dd {
   position: relative;
   padding: 0.5em;
-  box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0.3em;
 }
+
 .cp_qa dt {
   margin: 0 3em 1em 3em;
   background: #ffe0b2;
 }
+
 .cp_qa dd {
   margin: 0 3em 3em 3em;
   background: #b2ebf2;
 }
+
 /* 吹き出し▶︎ */
-.cp_qa dt::before,.cp_qa dd::before{
+.cp_qa dt::before,
+.cp_qa dd::before {
   position: absolute;
   z-index: 99;
   top: 0.5em;
@@ -32,20 +40,24 @@
   content: '';
   border-style: solid;
 }
+
 /* 質問吹き出し▶︎ */
 .cp_qa dt::before {
   left: -0.8em;
   border-width: 10px 17.4px 10px 0;
   border-color: transparent #ffe0b2 transparent transparent;
 }
+
 /* 答え吹き出し▶︎ */
 .cp_qa dd::before {
   right: -0.8em;
   border-width: 10px 0 10px 17.4px;
   border-color: transparent transparent transparent #b2ebf2;
 }
+
 /* ?!アイコン */
-.cp_qa dt::after,.cp_qa dd::after {
+.cp_qa dt::after,
+.cp_qa dd::after {
   font-size: 1.5em;
   position: absolute;
   top: 0;
@@ -56,6 +68,7 @@
   height: 1.5em;
   line-height: 1.2em;
 }
+
 /* ?アイコン */
 .cp_qa dt::after {
   left: -2.5em;
@@ -64,6 +77,7 @@
   content: 'Q';
   background: #f57c00;
 }
+
 /* !アイコン */
 .cp_qa dd::after {
   right: -2.5em;
@@ -92,9 +106,11 @@
   display: flex;
   align-items: center;
 }
+
 .timeline-area {
   padding: 10px 0;
 }
+
 .all-timelines {
   position: relative;
 }
@@ -110,12 +126,15 @@
   background: #efa22f;
   top: 20px;
 }
+
 .single-timeline {
   margin-bottom: 22px;
 }
+
 .timeline-blank {
   width: 50%;
 }
+
 .timeline-text {
   width: 50%;
   padding-left: 30px;
@@ -123,20 +142,24 @@
   box-sizing: border-box;
   position: relative;
 }
+
 .timeline-text h6 {
   color: black;
   font-weight: 900;
   display: inline-block;
   font-size: 1rem;
 }
+
 .timeline-text span {
   color: black;
   display: block;
   width: 100%;
 }
+
 .single-timeline:nth-child(even) .timeline-text span {
   text-align: right;
 }
+
 .t-square {
   content: "";
   position: absolute;
@@ -145,50 +168,59 @@
   left: -6px;
   background: #efa22f;
 }
+
 .single-timeline:nth-child(even) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
+
 .single-timeline:nth-child(even) .t-square {
   right: -6px;
   left: unset;
 }
+
 .single-timeline:nth-child(even) .timeline-text {
   padding-left: 0;
   padding-right: 30px;
   text-align: right;
 }
 
-@media all and (max-width: 991px) {
-}
+@media all and (max-width: 991px) {}
+
 @media all and (max-width: 768px) {
   .all-timelines::before {
     right: unset;
     top: 0;
   }
+
   .single-timeline:nth-child(2n) .timeline-text {
     padding-left: 30px;
     padding-right: 0;
     text-align: left;
   }
+
   .single-timeline:nth-child(2n) .t-square {
     left: -6px;
     right: unset;
   }
+
   .timeline-blank {
     display: none;
   }
+
   .timeline-text {
     width: 100%;
   }
+
   .single-timeline:nth-child(even) .timeline-text span {
     text-align: left !important;
   }
 }
-@media all and (max-width: 575px) {
-}
+
+@media all and (max-width: 575px) {}
+
 @media all and (max-width: 360px) {
   .all-timelines::before {
     top: 32px;
@@ -198,7 +230,8 @@
 
 .movie-wrap {
   position: relative;
-  padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+  padding-bottom: 56.25%;
+  /*アスペクト比 16:9の場合の縦幅*/
   height: 0;
   overflow: hidden;
 }
