@@ -1,5 +1,5 @@
 ---
-
+import '../styles/global.css'
 ---
 
 <html lang="ja">
@@ -11,19 +11,102 @@
     <title>埼玉大学宇宙工学サークルあかとき</title>
   </head>
   <body>
+    <!--Header Navigation -->
     <header>
       <nav>
-        <a href="/"><img src="/akatoki-logo.svg" alt="埼玉大学宇宙工学サークルあかとき"/></a>
-        <ul>
-          <li><a href="/">ホーム</a></li>
-          <li><a href="/activity/">団体概要</a></li>
-          <li><a href="/shinkan/">新歓情報</a></li>
-          <li><a href="/photos/">写真</a></li>
-          <li><a href="/mailto:aktk.saidai@gmail.com">問い合わせ</a></li>
-          <li><a href="/article/">記事一覧</a></li>
-          <li><a href="/form/">入会・継続フォーム</a></li>
+        <ul class="navigation-list">
+          <li class="navigation-list-item"><a href="/"><img class="navigation-list-item-logo" src="/akatoki-logo.svg" alt="埼玉大学宇宙工学サークルあかとき"/></a></li>
+          <li class="navigation-list-item"><a class="navigation-list-item-link" href="/">ホーム</a></li>
+          <li class="navigation-list-item"><a class="navigation-list-item-link" href="/activity/">団体概要</a></li>
+          <li class="navigation-list-item"><a class="navigation-list-item-link" href="/shinkan/">新歓情報</a></li>
+          <li class="navigation-list-item"><a class="navigation-list-item-link" href="/photos/">写真</a></li>
+          <li class="navigation-list-item"><a class="navigation-list-item-link" href="/mailto:aktk.saidai@gmail.com">問い合わせ</a></li>
+          <li class="navigation-list-item"><a class="navigation-list-item-link" href="/article/">記事一覧</a></li>
+          <li class="navigation-list-item"><a class="navigation-list-item-link" href="/form/">入会・継続フォーム</a></li>
         </ul>
       </nav>
     </header>
+    <!--Home -->
+    <section>
+      <h1>あかとき</h1>
+      <h2>animated text</h2>
+    </section>
+    <!--About -->
+    <section>
+      <h1>どんなサークルなの？</h1>
+      <p>埼玉大学宇宙工学サークルあかときは埼玉大学公認サークルです．主にCanSat（カンサット）と呼ばれる模擬人工衛星の開発を行い，毎年いくつかの大会に出場しています．その他にも宇宙・工学に関する基礎研究および応用研究，技術開発を取り扱い，文部科学省からも表彰頂いています．またみんなでBBQをしたり，お出かけをしたりと和気あいあいとしているサークルです． </p>
+      <ul>
+        <li><a href="https://twitter.com/aktk_saidai"><img src="" alt="twitter"/></a></li>
+        <li><a href="https://lin.ee/8El1Ev1"><img src="" alt="LINE"/></a></li>
+        <li><a href="https://www.youtube.com/channel/UCatV2sGwa6CtGaq9310GKxg"><img src="" alt="youtube"/></a></li>
+        <li><a href="mailto:aktk.saidai@gmail.com"><img src="" alt="mail"/></a></li>
+      </ul>
+      <a href="/activity">詳しく見る</a>
+    </section>
+    <!--Activities -->
+    <section>
+      <h1>活動内容</h1>
+      <ul>
+        <li>
+          <img />
+          <h2>模擬人工衛星（CanSat）の開発</h2>
+          <p>どんな機体を作製したいかをプロジェクトごとに話し合い，機体の設計から電子回路，プログラムまで１からCanSatの製作を行います．多くの人が初心者なので先輩方に教えてもらいながら活動しています．</p>
+        </li>
+        <li>
+          <img />
+          <h2>宇宙・工学に関する研究</h2>
+          <p>小型シンチレーション式放射線検出器を独自に製作し， 2次宇宙線の測定を行ったり，プロジェクト内で採取した土壌の成分評価を行うなど学術的に意義のあるミッションを考案し，プロジェクトに取り入れています．</p>
+        </li>
+        <li>
+          <img />
+          <h2>サークルメンバーの教育</h2>
+          <p>大学院生を含めたメンバーでサークル活動を行い，これまで獲得してきた高い知識を継承し，他団体・大学・企業と共同でプロジェクトを進行したり，技術協力して頂いたりと，日々知識を深めその共有を行っています． </p>
+        </li>
+        <li>
+          <img />
+          <h2>サークルメンバーの交流</h2>
+          <p>オンラインでの活動と対面での活動を併用して，さらにプロジェクトの活動だけでなく，Among UsやBBQ，星を見に行くなど大学生に入ったからにはやってみたいことをトコトンやって交流を深めています．</p>
+        </li>
+        <li>
+          <img />
+          <h2>スペースバルーンの打上</h2>
+          <p>本サークルあかときと，名古屋大学のNAFTとの共同プロジェクト「ANCO-project」を立ち上げ，高度30kmにある成層圏での理学的研究を行っています．2022年9月に第一回えひめ南予共同気球実験が行われ，創設メンバーとして大きな貢献をしました．また，JAXA 宇宙科学研究所で行われた大気球シンポジウムにてその成果を発表させて頂きました．</p>
+        </li>
+        <li>
+          <img />
+          <h2>人工衛星(CubeSat)の開発</h2>
+          <p>模擬人工衛星ではなく，実際に運用する人工衛星を作成しています．実際に打ち上げられるロケットに相乗りする予定です．実際の宇宙での観測等によって理学部的な発見もできればいいなと開発・検討を行っています．長期ミッションになる予定です． </p>
+        </li>
+      </ul>
+    </section>
+    <!--PR -->
+    <section>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KHm_z1PJKxk?si=iwFSWIU1xMAm_JVW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Lvzve6mYYW0?si=dlyuVnNApq5gQzNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+    <!--Formlink -->
+    <section>
+      <h1>Have a Dream</h1>
+      <a href="/form/">入会希望はこちら</a>
+    </section>
+    <!--FAQ -->
+    <section>
+      <h1>よくある質問</h1>
+      <dl>
+        <dt>いつ活動していますか？</dt>
+        <dd>メンバー全員にアンケートを取り、多くの人が活動できるように毎回調整しております。毎週１回サークルメンバー全員で活動するようにはしていますが、その日程も各タームごとにアンケートを取り決めています。</dd>
+        <dt>全くの初心者ですが、大丈夫ですか？</dt>
+        <dd>入会した当初は誰しも初心者です。「プログラムなんて触ったこと無い」、「ものづくりと全く縁が無かった」という人ばかりです。そのため、講習会を行ったり先輩方と一緒に作ったりと手厚くサポートします。</dd>
+        <dt>他のサークルに所属していても大丈夫でしょうか。兼サーはできますか。</dt>
+        <dd>サークルメンバーの半数は兼サーしています。全く問題ありません。サークル活動は柔軟に対応します。</dd>
+        <dt>年会費等はありますか。</dt>
+        <dd>年会費は新規入会者は2,000円、2年目以降は2,500円になります。また他にプロジェクトごとに開発メンバーで平滑化するので、その費用（約１万円）と、大会へ参加する際の宿泊費等は基本的に自費になります。ただ、本サークルでは大学を含め多くの機関からご支援頂いており、学生の負担ができる限り小さくなるように努力しております。詳しくは<a href="/activity/">こちら</a>をご覧くださいませ。</dd>
+      </dl>
+    </section>
+    <!--Footer -->
+    <footer>
+      <a href="#"><img src="" alt="PageTop"></a>
+      <p>&copy; 2020 - 埼玉大学宇宙工学サークルあかとき .All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
