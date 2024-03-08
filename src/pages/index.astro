@@ -6,9 +6,9 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
 
 <Layout pageTitle={pageTitle}>
   <!--Home -->
-  <section>
-    <h1>あかとき</h1>
-    <h2>animated text</h2>
+  <section class="home">
+    <h1 class="home-title">あかとき</h1>
+    <h2 class="home-subtitle">animated text</h2>
   </section>
   <!--About -->
   <section>
@@ -139,3 +139,31 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     <p>&copy; 2020 - 埼玉大学宇宙工学サークルあかとき .All Rights Reserved.</p>
   </footer>
 </Layout>
+
+<style>
+  .home {
+    width: 100%;
+    height: calc(100vh - 56px);
+    background-image: url(/bg/EwsPPg_VoAU0ubE.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .home::before {
+    content: '';
+    position: absolute;
+    top: 56px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(100, 100, 100, 0.7)
+  }
+
+  .home-title {
+    margin: 0;
+  }
+
+  .home-subtitle {
+    margin: 0;
+  }
+</style>
