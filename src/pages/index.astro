@@ -8,7 +8,11 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
   <!--Home -->
   <section class="home">
     <h1 class="home-title">あかとき</h1>
-    <h2 class="home-subtitle">animated text</h2>
+    <div class="home-subtitle-container">
+      <h2 class="home-subtitle">CanSat</h2>
+      <h2 class="home-subtitle">Saitama University</h2>
+      <h2 class="home-subtitle">Have a Dream</h2>
+    </div>
   </section>
   <!--About -->
   <section>
@@ -147,6 +151,9 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     background-image: url(/bg/EwsPPg_VoAU0ubE.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .home::before {
@@ -156,14 +163,57 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(100, 100, 100, 0.7)
+    background: rgba(100, 100, 100, 0.7);
+    z-index: 0;
   }
 
   .home-title {
+    padding: 0 16%;
+    font-size: 64px;
+    font-weight: 600;
+    position: relative;
+    color: #fff;
     margin: 0;
+    z-index: 1;
+  }
+
+  .home-subtitle-container {
+    padding: 0 16%;
+    position: relative;
+    width: max-content;
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    17% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 
   .home-subtitle {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bolder;
+    position: absolute;
+    width: max-content;
+    animation: fadeInOut 6s linear infinite;
     margin: 0;
   }
+
+  .home-subtitle:nth-child(2) {
+    animation-delay: 2s;
+  }
+
+  .home-subtitle:nth-child(3) {
+    animation-delay: 4s;
+  }
+
 </style>
