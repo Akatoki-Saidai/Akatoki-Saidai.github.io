@@ -6,13 +6,17 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
 
 <Layout pageTitle={pageTitle}>
   <!--Home -->
-  <section>
-    <h1>あかとき</h1>
-    <h2>animated text</h2>
+  <section class="home">
+    <h1 class="home-title">あかとき</h1>
+    <div class="home-subtitle-container">
+      <h2 class="home-subtitle">CanSat</h2>
+      <h2 class="home-subtitle">Saitama University</h2>
+      <h2 class="home-subtitle">Have a Dream</h2>
+    </div>
   </section>
   <!--About -->
   <section>
-    <h1>どんなサークルなの？</h1>
+    <h1 class="content-title">どんなサークルなの？</h1>
     <p>
       埼玉大学宇宙工学サークルあかときは埼玉大学公認サークルです．主にCanSat（カンサット）と呼ばれる模擬人工衛星の開発を行い，毎年いくつかの大会に出場しています．その他にも宇宙・工学に関する基礎研究および応用研究，技術開発を取り扱い，文部科学省からも表彰頂いています．またみんなでBBQをしたり，お出かけをしたりと和気あいあいとしているサークルです．
     </p>
@@ -34,18 +38,18 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
   </section>
   <!--Activities -->
   <section>
-    <h1>活動内容</h1>
+    <h1 class="content-title">活動内容</h1>
     <ul>
       <li>
         <img />
-        <h2>模擬人工衛星（CanSat）の開発</h2>
+        <h2 class="content-subtitle">模擬人工衛星（CanSat）の開発</h2>
         <p>
           どんな機体を作製したいかをプロジェクトごとに話し合い，機体の設計から電子回路，プログラムまで１からCanSatの製作を行います．多くの人が初心者なので先輩方に教えてもらいながら活動しています．
         </p>
       </li>
       <li>
         <img />
-        <h2>宇宙・工学に関する研究</h2>
+        <h2 class="content-subtitle">宇宙・工学に関する研究</h2>
         <p>
           小型シンチレーション式放射線検出器を独自に製作し，
           2次宇宙線の測定を行ったり，プロジェクト内で採取した土壌の成分評価を行うなど学術的に意義のあるミッションを考案し，プロジェクトに取り入れています．
@@ -53,14 +57,14 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
       </li>
       <li>
         <img />
-        <h2>サークルメンバーの教育</h2>
+        <h2 class="content-subtitle">サークルメンバーの教育</h2>
         <p>
           大学院生を含めたメンバーでサークル活動を行い，これまで獲得してきた高い知識を継承し，他団体・大学・企業と共同でプロジェクトを進行したり，技術協力して頂いたりと，日々知識を深めその共有を行っています．
         </p>
       </li>
       <li>
         <img />
-        <h2>サークルメンバーの交流</h2>
+        <h2 class="content-subtitle">サークルメンバーの交流</h2>
         <p>
           オンラインでの活動と対面での活動を併用して，さらにプロジェクトの活動だけでなく，Among
           UsやBBQ，星を見に行くなど大学生に入ったからにはやってみたいことをトコトンやって交流を深めています．
@@ -68,7 +72,7 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
       </li>
       <li>
         <img />
-        <h2>スペースバルーンの打上</h2>
+        <h2 class="content-subtitle">スペースバルーンの打上</h2>
         <p>
           本サークルあかときと，名古屋大学のNAFTとの共同プロジェクト「ANCO-project」を立ち上げ，高度30kmにある成層圏での理学的研究を行っています．2022年9月に第一回えひめ南予共同気球実験が行われ，創設メンバーとして大きな貢献をしました．また，JAXA
           宇宙科学研究所で行われた大気球シンポジウムにてその成果を発表させて頂きました．
@@ -76,7 +80,7 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
       </li>
       <li>
         <img />
-        <h2>人工衛星(CubeSat)の開発</h2>
+        <h2 class="content-subtitle">人工衛星(CubeSat)の開発</h2>
         <p>
           模擬人工衛星ではなく，実際に運用する人工衛星を作成しています．実際に打ち上げられるロケットに相乗りする予定です．実際の宇宙での観測等によって理学部的な発見もできればいいなと開発・検討を行っています．長期ミッションになる予定です．
         </p>
@@ -139,3 +143,104 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     <p>&copy; 2020 - 埼玉大学宇宙工学サークルあかとき .All Rights Reserved.</p>
   </footer>
 </Layout>
+
+<style>
+  .home {
+    width: 100%;
+    height: calc(100vh - 56px);
+    background-image: url(/bg/EwsPPg_VoAU0ubE.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home::before {
+    content: '';
+    position: absolute;
+    top: 56px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(100, 100, 100, 0.7);
+    z-index: 0;
+  }
+
+  .home-title {
+    padding: 0 16%;
+    font-size: 64px;
+    font-weight: 600;
+    position: relative;
+    color: #fff;
+    margin: 0;
+    z-index: 1;
+  }
+
+  .home-subtitle-container {
+    padding: 0 16%;
+    position: relative;
+    width: max-content;
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    17% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .home-subtitle {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bolder;
+    position: absolute;
+    width: max-content;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    margin: 0;
+  }
+
+  .home-subtitle:nth-child(1) {
+    animation: fadeInOut 6s linear infinite;
+    animation-delay: 0s;
+  }
+
+  .home-subtitle:nth-child(2) {
+    animation: fadeInOut 6s linear infinite;
+    animation-delay: 2s;
+  }
+
+  .home-subtitle:nth-child(3) {
+    animation: fadeInOut 6s linear infinite;
+    animation-delay: 4s;
+  }
+
+  .content-title {
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+    color: #6f6f6f;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .content-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%; /* 中央から開始 */
+  transform: translateX(-50%); /* 中央寄せの調整 */
+  width: 100px; /* ラインの長さを100pxに設定 */
+  border-top: 5px solid #6f6f6f;
+}
+
+</style>
