@@ -17,18 +17,20 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
   <!--About -->
   <section>
     <h1 class="content-title">どんなサークルなの？</h1>
-    <p>
+    <p class="content-description">
       埼玉大学宇宙工学サークルあかときは埼玉大学公認サークルです．主にCanSat（カンサット）と呼ばれる模擬人工衛星の開発を行い，毎年いくつかの大会に出場しています．その他にも宇宙・工学に関する基礎研究および応用研究，技術開発を取り扱い，文部科学省からも表彰頂いています．またみんなでBBQをしたり，お出かけをしたりと和気あいあいとしているサークルです．
     </p>
     <ul>
       <li>
         <a href="https://twitter.com/aktk_saidai"
-          ><img src="" alt="twitter" /></a>
+          ><img src="" alt="twitter" /></a
+        >
       </li>
       <li><a href="https://lin.ee/8El1Ev1"><img src="" alt="LINE" /></a></li>
       <li>
         <a href="https://www.youtube.com/channel/UCatV2sGwa6CtGaq9310GKxg"
-          ><img src="" alt="youtube" /></a>
+          ><img src="" alt="youtube" /></a
+        >
       </li>
       <li>
         <a href="mailto:aktk.saidai@gmail.com"><img src="" alt="mail" /></a>
@@ -154,16 +156,28 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: -1;
   }
 
   .home::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 56px;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(100, 100, 100, 0.7);
+    background: rgba(50, 50, 50, 0.6);
+    z-index: 0;
+  }
+
+  .home::after {
+    content: "";
+    position: absolute;
+    top: 56px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(50, 50, 50, 0.6);
     z-index: 0;
   }
 
@@ -234,13 +248,18 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
   }
 
   .content-title::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%; /* 中央から開始 */
-  transform: translateX(-50%); /* 中央寄せの調整 */
-  width: 100px; /* ラインの長さを100pxに設定 */
-  border-top: 5px solid #6f6f6f;
-}
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    border-top: 5px solid #6f6f6f;
+  }
 
+  .content-description {
+    width: 80%;
+    padding: 0 10%;
+    color: #6f6f6f;
+  }
 </style>
