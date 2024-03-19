@@ -79,14 +79,14 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     <h1 class="content-title">活動内容</h1>
     <ul class="activity-list">
       <li class="activity-item">
-        <img src="/public/img/make.png" />
+        <img src="/img/make.png" />
         <h2 class="content-subtitle">模擬人工衛星（CanSat）の開発</h2>
         <p>
           どんな機体を作製したいかをプロジェクトごとに話し合い，機体の設計から電子回路，プログラムまで１からCanSatの製作を行います．多くの人が初心者なので先輩方に教えてもらいながら活動しています．
         </p>
       </li>
       <li class="activity-item">
-        <img src="/public/img/research.png" />
+        <img src="/img/research.png" />
         <h2 class="content-subtitle">宇宙・工学に関する研究</h2>
         <p>
           小型シンチレーション式放射線検出器を独自に製作し，
@@ -94,14 +94,14 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
         </p>
       </li>
       <li class="activity-item">
-        <img src="/public/img/edu.png" />
+        <img src="/img/edu.png" />
         <h2 class="content-subtitle">サークルメンバーの教育</h2>
         <p>
           大学院生を含めたメンバーでサークル活動を行い，これまで獲得してきた高い知識を継承し，他団体・大学・企業と共同でプロジェクトを進行したり，技術協力して頂いたりと，日々知識を深めその共有を行っています．
         </p>
       </li>
       <li class="activity-item">
-        <img src="/public/img/waiwai.png" />
+        <img src="/img/waiwai.png" />
         <h2 class="content-subtitle">サークルメンバーの交流</h2>
         <p>
           オンラインでの活動と対面での活動を併用して，さらにプロジェクトの活動だけでなく，Among
@@ -109,7 +109,7 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
         </p>
       </li>
       <li class="activity-item">
-        <img src="/public/img/spaceballon.png" />
+        <img src="/img/spaceballon.png" />
         <h2 class="content-subtitle">スペースバルーンの打上</h2>
         <p>
           本サークルあかときと，名古屋大学のNAFTとの共同プロジェクト「ANCO-project」を立ち上げ，高度30kmにある成層圏での理学的研究を行っています．2022年9月に第一回えひめ南予共同気球実験が行われ，創設メンバーとして大きな貢献をしました．また，JAXA
@@ -117,7 +117,7 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
         </p>
       </li>
       <li class="activity-item">
-        <img src="/public/img/rocket_satellite.png" />
+        <img src="/img/rocket_satellite.png" />
         <h2 class="content-subtitle">人工衛星(CubeSat)の開発</h2>
         <p>
           模擬人工衛星ではなく，実際に運用する人工衛星を作成しています．実際に打ち上げられるロケットに相乗りする予定です．実際の宇宙での観測等によって理学部的な発見もできればいいなと開発・検討を行っています．長期ミッションになる予定です．
@@ -151,9 +151,9 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     </ul>
   </section>
   <!--Formlink -->
-  <section>
-    <h1>Have a Dream</h1>
-    <a href="/form/">入会希望はこちら</a>
+  <section class="form">
+    <h1 class="form-title">Have a Dream</h1>
+    <a class="form-link-btn" href="/form/">入会希望はこちら</a>
   </section>
   <!--FAQ -->
   <section>
@@ -192,9 +192,14 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
   .home {
     width: 100%;
     height: calc(100vh - 56px);
-    background-image: url(/bg/EwsPPg_VoAU0ubE.jpg);
+    background-image: linear-gradient(
+        rgba(50, 50, 50, 0.6),
+        rgba(50, 50, 50, 0.6)
+      ),
+      url(/bg/EwsPPg_VoAU0ubE.jpg);
     background-position: center;
     background-size: cover;
+    background-color: rgba(50, 50, 50, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,17 +207,6 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
   }
 
   .home::before {
-    content: "";
-    position: absolute;
-    top: 56px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(50, 50, 50, 0.6);
-    z-index: 0;
-  }
-
-  .home::after {
     content: "";
     position: absolute;
     top: 56px;
@@ -409,5 +403,60 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
   .pr-item {
     width: 48%;
     aspect-ratio: 16 / 9;
+  }
+
+  .form {
+    background-color: #313131;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/bg/CanSatex.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 250px;
+    margin: 32px 0;
+    position: relative;
+    text-align: center;
+  }
+
+  .form-title {
+    position: relative;
+    top: 70px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  .form-link-btn {
+    position: relative;
+    top: 100px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color, border-color, color, box-shadow,
+      filter;
+    transition-duration: 0.3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    width: 180px;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: normal;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 16px;
+    color: #000;
+    box-shadow: inset 0 0 0 2px #fff;
+    background-color: #fff;
+  }
+
+  .form-link-btn:hover {
+    color: #fff;
+    background-color: transparent;
   }
 </style>
