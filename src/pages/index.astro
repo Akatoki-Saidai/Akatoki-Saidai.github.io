@@ -162,25 +162,25 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     <a class="form-link-btn" href="/form/">入会希望はこちら</a>
   </section>
   <!--FAQ -->
-  <section>
-    <h1>よくある質問</h1>
-    <dl>
-      <dt>いつ活動していますか？</dt>
-      <dd>
+  <section class="faq">
+    <h1 class="faq-title">よくある質問</h1>
+    <dl class="faq-qa">
+      <dt class="faq-qa-q">いつ活動していますか？</dt>
+      <dd class="faq-qa-a">
         メンバー全員にアンケートを取り、多くの人が活動できるように毎回調整しております。毎週１回サークルメンバー全員で活動するようにはしていますが、その日程も各タームごとにアンケートを取り決めています。
       </dd>
-      <dt>全くの初心者ですが、大丈夫ですか？</dt>
-      <dd>
+      <dt class="faq-qa-q">全くの初心者ですが、大丈夫ですか？</dt>
+      <dd class="faq-qa-a">
         入会した当初は誰しも初心者です。「プログラムなんて触ったこと無い」、「ものづくりと全く縁が無かった」という人ばかりです。そのため、講習会を行ったり先輩方と一緒に作ったりと手厚くサポートします。
       </dd>
-      <dt>
+      <dt class="faq-qa-q">
         他のサークルに所属していても大丈夫でしょうか。兼サーはできますか。
       </dt>
-      <dd>
+      <dd class="faq-qa-a">
         サークルメンバーの半数は兼サーしています。全く問題ありません。サークル活動は柔軟に対応します。
       </dd>
-      <dt>年会費等はありますか。</dt>
-      <dd>
+      <dt class="faq-qa-q">年会費等はありますか。</dt>
+      <dd class="faq-qa-a">
         年会費は新規入会者は2,000円、2年目以降は2,500円になります。また他にプロジェクトごとに開発メンバーで平滑化するので、その費用（約１万円）と、大会へ参加する際の宿泊費等は基本的に自費になります。ただ、本サークルでは大学を含め多くの機関からご支援頂いており、学生の負担ができる限り小さくなるように努力しております。詳しくは<a
           href="/activity/">こちら</a
         >をご覧くださいませ。
@@ -464,5 +464,40 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
   .form-link-btn:hover, .form-link-btn:active {
     color: #fff;
     background-color: transparent;
+  }
+
+  .faq {
+    margin-top: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/bg/20201006monogukuri.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+  }
+
+  .faq-title {
+    top: 120px;
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .faq-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    border-top: 5px solid #fff;
+  }
+
+  .faq-qa {
+    top: 160px;
+    position: relative;
   }
 </style>
