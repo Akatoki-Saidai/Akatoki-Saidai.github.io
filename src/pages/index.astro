@@ -79,14 +79,14 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     <h1 class="content-title">活動内容</h1>
     <ul class="activity-list">
       <li class="activity-item">
-        <img src="/public/img/make.png"/>
+        <img src="/public/img/make.png" />
         <h2 class="content-subtitle">模擬人工衛星（CanSat）の開発</h2>
         <p>
           どんな機体を作製したいかをプロジェクトごとに話し合い，機体の設計から電子回路，プログラムまで１からCanSatの製作を行います．多くの人が初心者なので先輩方に教えてもらいながら活動しています．
         </p>
       </li>
       <li class="activity-item">
-        <img src="/public/img/research.png"/>
+        <img src="/public/img/research.png" />
         <h2 class="content-subtitle">宇宙・工学に関する研究</h2>
         <p>
           小型シンチレーション式放射線検出器を独自に製作し，
@@ -127,22 +127,28 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
   </section>
   <!--PR -->
   <section>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube-nocookie.com/embed/KHm_z1PJKxk?si=iwFSWIU1xMAm_JVW"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube-nocookie.com/embed/Lvzve6mYYW0?si=dlyuVnNApq5gQzNU"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
+    <ul class="pr-list">
+      <li class="pr-item">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube-nocookie.com/embed/KHm_z1PJKxk?si=iwFSWIU1xMAm_JVW"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </li>
+      <li class="pr-item">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube-nocookie.com/embed/Lvzve6mYYW0?si=dlyuVnNApq5gQzNU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </li>
+    </ul>
   </section>
   <!--Formlink -->
   <section>
@@ -320,7 +326,8 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     fill: #6f6f6f;
   }
 
-  .sns-icon svg:hover, .sns-icon svg:active {
+  .sns-icon svg:hover,
+  .sns-icon svg:active {
     fill: #d31444;
   }
 
@@ -388,5 +395,19 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     margin-top: 10px;
     margin-bottom: 20px;
     color: #6f6f6f;
+  }
+
+  .pr-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0 10%;
+    width: 80%;
+  }
+
+  .pr-item {
+    width: 48%;
+    aspect-ratio: 16 / 9;
   }
 </style>
