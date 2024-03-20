@@ -83,14 +83,14 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     <h1 class="content-title">活動内容</h1>
     <ul class="activity-list">
       <li class="activity-item">
-        <img src="/img/make.png" alt="模擬人工衛星（CanSat）の開発"/>
+        <img src="/img/make.png" alt="模擬人工衛星（CanSat）の開発" />
         <h2 class="content-subtitle">模擬人工衛星（CanSat）の開発</h2>
         <p>
           どんな機体を作製したいかをプロジェクトごとに話し合い，機体の設計から電子回路，プログラムまで１からCanSatの製作を行います．多くの人が初心者なので先輩方に教えてもらいながら活動しています．
         </p>
       </li>
       <li class="activity-item">
-        <img src="/img/research.png" alt="宇宙・工学に関する研究"/>
+        <img src="/img/research.png" alt="宇宙・工学に関する研究" />
         <h2 class="content-subtitle">宇宙・工学に関する研究</h2>
         <p>
           小型シンチレーション式放射線検出器を独自に製作し，
@@ -98,14 +98,14 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
         </p>
       </li>
       <li class="activity-item">
-        <img src="/img/edu.png" alt="サークルメンバーの教育"/>
+        <img src="/img/edu.png" alt="サークルメンバーの教育" />
         <h2 class="content-subtitle">サークルメンバーの教育</h2>
         <p>
           大学院生を含めたメンバーでサークル活動を行い，これまで獲得してきた高い知識を継承し，他団体・大学・企業と共同でプロジェクトを進行したり，技術協力して頂いたりと，日々知識を深めその共有を行っています．
         </p>
       </li>
       <li class="activity-item">
-        <img src="/img/waiwai.png" alt="サークルメンバーの交流"/>
+        <img src="/img/waiwai.png" alt="サークルメンバーの交流" />
         <h2 class="content-subtitle">サークルメンバーの交流</h2>
         <p>
           オンラインでの活動と対面での活動を併用して，さらにプロジェクトの活動だけでなく，Among
@@ -113,7 +113,7 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
         </p>
       </li>
       <li class="activity-item">
-        <img src="/img/spaceballon.png" alt="スペースバルーンの打上"/>
+        <img src="/img/spaceballon.png" alt="スペースバルーンの打上" />
         <h2 class="content-subtitle">スペースバルーンの打上</h2>
         <p>
           本サークルあかときと，名古屋大学のNAFTとの共同プロジェクト「ANCO-project」を立ち上げ，高度30kmにある成層圏での理学的研究を行っています．2022年9月に第一回えひめ南予共同気球実験が行われ，創設メンバーとして大きな貢献をしました．また，JAXA
@@ -121,7 +121,7 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
         </p>
       </li>
       <li class="activity-item">
-        <img src="/img/rocket_satellite.png" alt="人工衛星(CubeSat)の開発"/>
+        <img src="/img/rocket_satellite.png" alt="人工衛星(CubeSat)の開発" />
         <h2 class="content-subtitle">人工衛星(CubeSat)の開発</h2>
         <p>
           模擬人工衛星ではなく，実際に運用する人工衛星を作成しています．実際に打ち上げられるロケットに相乗りする予定です．実際の宇宙での観測等によって理学部的な発見もできればいいなと開発・検討を行っています．長期ミッションになる予定です．
@@ -357,7 +357,8 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     margin: auto;
   }
 
-  .link-btn:hover, .link-btn:active {
+  .link-btn:hover,
+  .link-btn:active {
     color: #fff;
     background-color: #6f6f6f;
   }
@@ -461,25 +462,30 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     background-color: #fff;
   }
 
-  .form-link-btn:hover, .form-link-btn:active {
+  .form-link-btn:hover,
+  .form-link-btn:active {
     color: #fff;
     background-color: transparent;
   }
 
   .faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 20px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/bg/20201006monogukuri.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/bg/20201006monogukuri.jpg);
     background-size: cover;
     background-position: 50%;
     background-attachment: fixed;
     position: relative;
-    height: 100vh;
+    height: auto;
   }
 
   .faq-title {
-    top: 120px;
     position: relative;
     padding-top: 10px;
+    margin-top: 120px;
     text-align: center;
     color: #fff;
     font-weight: 700;
@@ -497,7 +503,92 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
   }
 
   .faq-qa {
-    top: 160px;
     position: relative;
+    width: 80%;
+    margin: 48px 10%;
+  }
+
+  .faq-qa-q::before {
+    left: -0.8em;
+    border-width: 10px 17.4px 10px 0;
+    border-color: transparent #ffe0b2 transparent transparent;
+    position: absolute;
+    z-index: 99;
+    top: 0.5em;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    content: "";
+    border-style: solid;
+  }
+
+  .faq-qa-q {
+    margin: 0 3em 1em 3em;
+    background: #ffe0b2;
+    position: relative;
+    padding: 0.5em;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0.3em;
+    font-weight: 600;
+  }
+
+  .faq-qa-q::after {
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    left: -2.5em;
+    margin: 0;
+    padding: 0.1em 0.1em;
+    content: "Q";
+    background: #f57c00;
+  }
+
+  .faq-qa-a::before {
+    right: -0.8em;
+    border-width: 10px 0 10px 17.4px;
+    border-color: transparent transparent transparent #b2ebf2;
+    position: absolute;
+    z-index: 99;
+    top: 0.5em;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    content: "";
+    border-style: solid;
+  }
+
+  .faq-qa-a {
+    position: relative;
+    padding: 0.5em;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0.3em;
+    margin: 0 3em 3em 3em;
+    background: #b2ebf2;
+    font-weight: 600;
+  }
+
+  .faq-qa-a::after {
+    right: -2.5em;
+    margin: 0 0 0 0em;
+    padding: 0.1em 0.1em;
+    content: "A";
+    background: #0097a7;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
   }
 </style>
