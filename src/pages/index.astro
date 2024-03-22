@@ -1,5 +1,6 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from '../layouts/Layout.astro';
+import '../styles/index.css'
 
 const pageTitle = "埼玉大学宇宙工学サークルあかとき";
 ---
@@ -7,6 +8,11 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
 <Layout pageTitle={pageTitle}>
   <!--Home -->
   <section class="home">
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="bg bg4"></div>
+    <div class="bg bg5"></div>
     <h1 class="home-title">あかとき</h1>
     <div class="home-subtitle-container">
       <h2 class="home-subtitle">CanSat</h2>
@@ -20,68 +26,108 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     <p class="content-description">
       埼玉大学宇宙工学サークルあかときは埼玉大学公認サークルです．主にCanSat（カンサット）と呼ばれる模擬人工衛星の開発を行い，毎年いくつかの大会に出場しています．その他にも宇宙・工学に関する基礎研究および応用研究，技術開発を取り扱い，文部科学省からも表彰頂いています．またみんなでBBQをしたり，お出かけをしたりと和気あいあいとしているサークルです．
     </p>
-    <ul>
-      <li>
-        <a href="https://twitter.com/aktk_saidai"
-          ><img src="" alt="twitter" /></a
+    <ul class="sns-icon-list">
+      <li class="sns-icon-item">
+        <a class="sns-icon" href="https://twitter.com/aktk_saidai">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 512 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+            <title>X(twitter)</title>
+            <path
+              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+            ></path>
+          </svg>
+        </a>
+      </li>
+      <li class="sns-icon-item">
+        <a class="sns-icon" href="https://lin.ee/8El1Ev1"
+          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+            ><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <title>LINE</title>
+            <path
+              d="M311 196.8v81.3c0 2.1-1.6 3.7-3.7 3.7h-13c-1.3 0-2.4-.7-3-1.5l-37.3-50.3v48.2c0 2.1-1.6 3.7-3.7 3.7h-13c-2.1 0-3.7-1.6-3.7-3.7V196.9c0-2.1 1.6-3.7 3.7-3.7h12.9c1.1 0 2.4 .6 3 1.6l37.3 50.3V196.9c0-2.1 1.6-3.7 3.7-3.7h13c2.1-.1 3.8 1.6 3.8 3.5zm-93.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 2.1 1.6 3.7 3.7 3.7h13c2.1 0 3.7-1.6 3.7-3.7V196.8c0-1.9-1.6-3.7-3.7-3.7zm-31.4 68.1H150.3V196.8c0-2.1-1.6-3.7-3.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 1 .3 1.8 1 2.5c.7 .6 1.5 1 2.5 1h52.2c2.1 0 3.7-1.6 3.7-3.7v-13c0-1.9-1.6-3.7-3.5-3.7zm193.7-68.1H327.3c-1.9 0-3.7 1.6-3.7 3.7v81.3c0 1.9 1.6 3.7 3.7 3.7h52.2c2.1 0 3.7-1.6 3.7-3.7V265c0-2.1-1.6-3.7-3.7-3.7H344V247.7h35.5c2.1 0 3.7-1.6 3.7-3.7V230.9c0-2.1-1.6-3.7-3.7-3.7H344V213.5h35.5c2.1 0 3.7-1.6 3.7-3.7v-13c-.1-1.9-1.7-3.7-3.7-3.7zM512 93.4V419.4c-.1 51.2-42.1 92.7-93.4 92.6H92.6C41.4 511.9-.1 469.8 0 418.6V92.6C.1 41.4 42.2-.1 93.4 0H419.4c51.2 .1 92.7 42.1 92.6 93.4zM441.6 233.5c0-83.4-83.7-151.3-186.4-151.3s-186.4 67.9-186.4 151.3c0 74.7 66.3 137.4 155.9 149.3c21.8 4.7 19.3 12.7 14.4 42.1c-.8 4.7-3.8 18.4 16.1 10.1s107.3-63.2 146.5-108.2c27-29.7 39.9-59.8 39.9-93.1z"
+            ></path></svg
+          ></a
         >
       </li>
-      <li><a href="https://lin.ee/8El1Ev1"><img src="" alt="LINE" /></a></li>
-      <li>
-        <a href="https://www.youtube.com/channel/UCatV2sGwa6CtGaq9310GKxg"
-          ><img src="" alt="youtube" /></a
+      <li class="sns-icon-item">
+        <a
+          class="sns-icon"
+          href="https://www.youtube.com/channel/UCatV2sGwa6CtGaq9310GKxg"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 576 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+            <title>YouTube</title>
+            <path
+              d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+            ></path>
+          </svg></a
         >
       </li>
-      <li>
-        <a href="mailto:aktk.saidai@gmail.com"><img src="" alt="mail" /></a>
+      <li class="sns-icon-item">
+        <a class="sns-icon" href="mailto:aktk.saidai@gmail.com"
+          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+            ><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <title>email</title>
+            <path
+              d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7 .3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2 .4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+            ></path></svg
+          ></a
+        >
       </li>
     </ul>
-    <a href="/activity">詳しく見る</a>
+    <a class="link-btn" href="/activity">詳しく見る</a>
   </section>
   <!--Activities -->
   <section>
     <h1 class="content-title">活動内容</h1>
-    <ul>
-      <li>
-        <img />
+    <ul class="activity-list">
+      <li class="activity-item">
+        <img src="/img/make.png" alt="模擬人工衛星（CanSat）の開発" />
         <h2 class="content-subtitle">模擬人工衛星（CanSat）の開発</h2>
         <p>
           どんな機体を作製したいかをプロジェクトごとに話し合い，機体の設計から電子回路，プログラムまで１からCanSatの製作を行います．多くの人が初心者なので先輩方に教えてもらいながら活動しています．
         </p>
       </li>
-      <li>
-        <img />
+      <li class="activity-item">
+        <img src="/img/research.png" alt="宇宙・工学に関する研究" />
         <h2 class="content-subtitle">宇宙・工学に関する研究</h2>
         <p>
           小型シンチレーション式放射線検出器を独自に製作し，
           2次宇宙線の測定を行ったり，プロジェクト内で採取した土壌の成分評価を行うなど学術的に意義のあるミッションを考案し，プロジェクトに取り入れています．
         </p>
       </li>
-      <li>
-        <img />
+      <li class="activity-item">
+        <img src="/img/edu.png" alt="サークルメンバーの教育" />
         <h2 class="content-subtitle">サークルメンバーの教育</h2>
         <p>
           大学院生を含めたメンバーでサークル活動を行い，これまで獲得してきた高い知識を継承し，他団体・大学・企業と共同でプロジェクトを進行したり，技術協力して頂いたりと，日々知識を深めその共有を行っています．
         </p>
       </li>
-      <li>
-        <img />
+      <li class="activity-item">
+        <img src="/img/waiwai.png" alt="サークルメンバーの交流" />
         <h2 class="content-subtitle">サークルメンバーの交流</h2>
         <p>
           オンラインでの活動と対面での活動を併用して，さらにプロジェクトの活動だけでなく，Among
           UsやBBQ，星を見に行くなど大学生に入ったからにはやってみたいことをトコトンやって交流を深めています．
         </p>
       </li>
-      <li>
-        <img />
+      <li class="activity-item">
+        <img src="/img/spaceballon.png" alt="スペースバルーンの打上" />
         <h2 class="content-subtitle">スペースバルーンの打上</h2>
         <p>
           本サークルあかときと，名古屋大学のNAFTとの共同プロジェクト「ANCO-project」を立ち上げ，高度30kmにある成層圏での理学的研究を行っています．2022年9月に第一回えひめ南予共同気球実験が行われ，創設メンバーとして大きな貢献をしました．また，JAXA
           宇宙科学研究所で行われた大気球シンポジウムにてその成果を発表させて頂きました．
         </p>
       </li>
-      <li>
-        <img />
+      <li class="activity-item">
+        <img src="/img/rocket_satellite.png" alt="人工衛星(CubeSat)の開発" />
         <h2 class="content-subtitle">人工衛星(CubeSat)の開発</h2>
         <p>
           模擬人工衛星ではなく，実際に運用する人工衛星を作成しています．実際に打ち上げられるロケットに相乗りする予定です．実際の宇宙での観測等によって理学部的な発見もできればいいなと開発・検討を行っています．長期ミッションになる予定です．
@@ -91,48 +137,56 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
   </section>
   <!--PR -->
   <section>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube-nocookie.com/embed/KHm_z1PJKxk?si=iwFSWIU1xMAm_JVW"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube-nocookie.com/embed/Lvzve6mYYW0?si=dlyuVnNApq5gQzNU"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
+    <ul class="pr-list">
+      <li class="pr-item">
+        <iframe
+          loading="lazy"
+          width="100%"
+          height="100%"
+          src="https://www.youtube-nocookie.com/embed/KHm_z1PJKxk?si=iwFSWIU1xMAm_JVW"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </li>
+      <li class="pr-item">
+        <iframe
+          loading="lazy"
+          width="100%"
+          height="100%"
+          src="https://www.youtube-nocookie.com/embed/Lvzve6mYYW0?si=dlyuVnNApq5gQzNU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </li>
+    </ul>
   </section>
   <!--Formlink -->
-  <section>
-    <h1>Have a Dream</h1>
-    <a href="/form/">入会希望はこちら</a>
+  <section class="form">
+    <h1 class="form-title">Have a Dream</h1>
+    <a class="form-link-btn" href="/form/">入会希望はこちら</a>
   </section>
   <!--FAQ -->
-  <section>
-    <h1>よくある質問</h1>
-    <dl>
-      <dt>いつ活動していますか？</dt>
-      <dd>
+  <section class="faq">
+    <h1 class="faq-title">よくある質問</h1>
+    <dl class="faq-qa">
+      <dt class="faq-qa-q">いつ活動していますか？</dt>
+      <dd class="faq-qa-a">
         メンバー全員にアンケートを取り、多くの人が活動できるように毎回調整しております。毎週１回サークルメンバー全員で活動するようにはしていますが、その日程も各タームごとにアンケートを取り決めています。
       </dd>
-      <dt>全くの初心者ですが、大丈夫ですか？</dt>
-      <dd>
+      <dt class="faq-qa-q">全くの初心者ですが、大丈夫ですか？</dt>
+      <dd class="faq-qa-a">
         入会した当初は誰しも初心者です。「プログラムなんて触ったこと無い」、「ものづくりと全く縁が無かった」という人ばかりです。そのため、講習会を行ったり先輩方と一緒に作ったりと手厚くサポートします。
       </dd>
-      <dt>
+      <dt class="faq-qa-q">
         他のサークルに所属していても大丈夫でしょうか。兼サーはできますか。
       </dt>
-      <dd>
+      <dd class="faq-qa-a">
         サークルメンバーの半数は兼サーしています。全く問題ありません。サークル活動は柔軟に対応します。
       </dd>
-      <dt>年会費等はありますか。</dt>
-      <dd>
+      <dt class="faq-qa-q">年会費等はありますか。</dt>
+      <dd class="faq-qa-a">
         年会費は新規入会者は2,000円、2年目以降は2,500円になります。また他にプロジェクトごとに開発メンバーで平滑化するので、その費用（約１万円）と、大会へ参加する際の宿泊費等は基本的に自費になります。ただ、本サークルでは大学を含め多くの機関からご支援頂いており、学生の負担ができる限り小さくなるように努力しております。詳しくは<a
           href="/activity/">こちら</a
         >をご覧くださいませ。
@@ -140,126 +194,69 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     </dl>
   </section>
   <!--Footer -->
-  <footer>
-    <a href="#"><img src="" alt="PageTop" /></a>
-    <p>&copy; 2020 - 埼玉大学宇宙工学サークルあかとき .All Rights Reserved.</p>
+  <footer class="footer">
+    <section class="footer-content">
+      <a class="footer-icon" href="/"><img src="/aktk.png" /></a>
+      <ul class="footer-sns-icon-list">
+        <li class="footer-sns-icon-item">
+          <a class="footer-sns-icon-link" href="https://twitter.com/aktk_saidai"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 512 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+              <title>X(twitter)</title>
+              <path
+                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+              ></path>
+            </svg></a
+          >
+        </li>
+        <li class="footer-sns-icon-item">
+          <a class="footer-sns-icon-link" href="https://lin.ee/8El1Ev1"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+              ><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <title>LINE</title>
+              <path
+                d="M311 196.8v81.3c0 2.1-1.6 3.7-3.7 3.7h-13c-1.3 0-2.4-.7-3-1.5l-37.3-50.3v48.2c0 2.1-1.6 3.7-3.7 3.7h-13c-2.1 0-3.7-1.6-3.7-3.7V196.9c0-2.1 1.6-3.7 3.7-3.7h12.9c1.1 0 2.4 .6 3 1.6l37.3 50.3V196.9c0-2.1 1.6-3.7 3.7-3.7h13c2.1-.1 3.8 1.6 3.8 3.5zm-93.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 2.1 1.6 3.7 3.7 3.7h13c2.1 0 3.7-1.6 3.7-3.7V196.8c0-1.9-1.6-3.7-3.7-3.7zm-31.4 68.1H150.3V196.8c0-2.1-1.6-3.7-3.7-3.7h-13c-2.1 0-3.7 1.6-3.7 3.7v81.3c0 1 .3 1.8 1 2.5c.7 .6 1.5 1 2.5 1h52.2c2.1 0 3.7-1.6 3.7-3.7v-13c0-1.9-1.6-3.7-3.5-3.7zm193.7-68.1H327.3c-1.9 0-3.7 1.6-3.7 3.7v81.3c0 1.9 1.6 3.7 3.7 3.7h52.2c2.1 0 3.7-1.6 3.7-3.7V265c0-2.1-1.6-3.7-3.7-3.7H344V247.7h35.5c2.1 0 3.7-1.6 3.7-3.7V230.9c0-2.1-1.6-3.7-3.7-3.7H344V213.5h35.5c2.1 0 3.7-1.6 3.7-3.7v-13c-.1-1.9-1.7-3.7-3.7-3.7zM512 93.4V419.4c-.1 51.2-42.1 92.7-93.4 92.6H92.6C41.4 511.9-.1 469.8 0 418.6V92.6C.1 41.4 42.2-.1 93.4 0H419.4c51.2 .1 92.7 42.1 92.6 93.4zM441.6 233.5c0-83.4-83.7-151.3-186.4-151.3s-186.4 67.9-186.4 151.3c0 74.7 66.3 137.4 155.9 149.3c21.8 4.7 19.3 12.7 14.4 42.1c-.8 4.7-3.8 18.4 16.1 10.1s107.3-63.2 146.5-108.2c27-29.7 39.9-59.8 39.9-93.1z"
+              ></path></svg
+            ></a
+          >
+        </li>
+        <li class="footer-sns-icon-item">
+          <a
+            class="footer-sns-icon-link"
+            href="https://www.youtube.com/channel/UCatV2sGwa6CtGaq9310GKxg"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 576 512"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+              <title>YouTube</title>
+              <path
+                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+              ></path>
+            </svg></a
+          >
+        </li>
+        <li class="footer-sns-icon-item">
+          <a class="footer-sns-icon-link" href="mailto:aktk.saidai@gmail.com"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+              ><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <title>email</title>
+              <path
+                d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7 .3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2 .4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+              ></path></svg
+            ></a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <p class="footer-credit">
+      &copy; 2020 - 埼玉大学宇宙工学サークルあかとき All Rights Reserved.
+    </p>
   </footer>
 </Layout>
-
-<style>
-  .home {
-    width: 100%;
-    height: calc(100vh - 56px);
-    background-image: url(/bg/EwsPPg_VoAU0ubE.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: -1;
-  }
-
-  .home::before {
-    content: "";
-    position: absolute;
-    top: 56px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(50, 50, 50, 0.6);
-    z-index: 0;
-  }
-
-  .home::after {
-    content: "";
-    position: absolute;
-    top: 56px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(50, 50, 50, 0.6);
-    z-index: 0;
-  }
-
-  .home-title {
-    padding: 0 16%;
-    font-size: 64px;
-    font-weight: 600;
-    position: relative;
-    color: #fff;
-    margin: 0;
-    z-index: 1;
-  }
-
-  .home-subtitle-container {
-    padding: 0 16%;
-    position: relative;
-    width: max-content;
-  }
-
-  @keyframes fadeInOut {
-    0% {
-      opacity: 0;
-    }
-    17% {
-      opacity: 1;
-    }
-    33% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
-  .home-subtitle {
-    color: #fff;
-    font-size: 32px;
-    font-weight: bolder;
-    position: absolute;
-    width: max-content;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    margin: 0;
-  }
-
-  .home-subtitle:nth-child(1) {
-    animation: fadeInOut 6s linear infinite;
-    animation-delay: 0s;
-  }
-
-  .home-subtitle:nth-child(2) {
-    animation: fadeInOut 6s linear infinite;
-    animation-delay: 2s;
-  }
-
-  .home-subtitle:nth-child(3) {
-    animation: fadeInOut 6s linear infinite;
-    animation-delay: 4s;
-  }
-
-  .content-title {
-    position: relative;
-    padding-top: 10px;
-    text-align: center;
-    color: #6f6f6f;
-    font-weight: 700;
-    font-size: 2rem;
-  }
-
-  .content-title::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    border-top: 5px solid #6f6f6f;
-  }
-
-  .content-description {
-    width: 80%;
-    padding: 0 10%;
-    color: #6f6f6f;
-  }
-</style>
