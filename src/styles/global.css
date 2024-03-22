@@ -11,7 +11,7 @@ body {
   align-items: center;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 32px 0 0;
   background-color: #6f6f6f;
   height: 56px;
 }
