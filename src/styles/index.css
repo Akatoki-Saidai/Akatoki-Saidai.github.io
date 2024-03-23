@@ -21,40 +21,51 @@
 
 .bg1 {
   background-image: linear-gradient(rgba(50, 50, 50, 0.6),
-  rgba(50, 50, 50, 0.6)),url('/bg/cansat_sea.jpg');
+      rgba(50, 50, 50, 0.6)), url('/bg/cansat_sea.jpg');
   animation-delay: 0s;
 }
 
 .bg2 {
   background-image: linear-gradient(rgba(50, 50, 50, 0.6),
-  rgba(50, 50, 50, 0.6)),url('/bg/FNPACFDVQAULD_l.jpg');
+      rgba(50, 50, 50, 0.6)), url('/bg/FNPACFDVQAULD_l.jpg');
   animation-delay: 4s;
 }
 
 .bg3 {
   background-image: linear-gradient(rgba(50, 50, 50, 0.6),
-  rgba(50, 50, 50, 0.6)),url('/bg/VideoCapture_20211031-182421_remastered.jpg');
+      rgba(50, 50, 50, 0.6)), url('/bg/VideoCapture_20211031-182421_remastered.jpg');
   animation-delay: 8s;
 }
 
 .bg4 {
   background-image: linear-gradient(rgba(50, 50, 50, 0.6),
-  rgba(50, 50, 50, 0.6)),url('/bg/everyonemakecansat.jpg');
+      rgba(50, 50, 50, 0.6)), url('/bg/everyonemakecansat.jpg');
   animation-delay: 12s;
 }
 
 .bg5 {
   background-image: linear-gradient(rgba(50, 50, 50, 0.6),
-  rgba(50, 50, 50, 0.6)),url('/bg/EwsPPg_VoAU0ubE.jpg');
+      rgba(50, 50, 50, 0.6)), url('/bg/EwsPPg_VoAU0ubE.jpg');
   animation-delay: 16s;
 }
 
 
 @keyframes fade {
-  0% {opacity: 0;}
-  3% {opacity: 1;}
-  20% {opacity: 1;}
-  23% {opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+
+  3% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  23% {
+    opacity: 0;
+  }
 }
 
 
@@ -439,60 +450,5 @@
   width: 1.5em;
   height: 1.5em;
   line-height: 1.5em;
-  text-align: center;
-}
-
-.footer {
-  background-color: #6f6f6f;
-  padding: 5% 5% 0.5% 5%;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-icon {
-  width: 30%;
-}
-
-.footer-icon img {
-  width: 100%;
-}
-
-.footer-sns-icon-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.footer-sns-icon-item {
-  list-style: none;
-  padding: 0;
-  margin: 0 8px 0 0;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.footer-sns-icon-link {
-  margin-top: auto;
-}
-
-.footer-sns-icon-link svg {
-  width: 64px;
-  height: 64px;
-  fill: #fff;
-}
-
-.footer-sns-icon-link svg:hover,
-.footer-sns-icon-link svg:active {
-  fill: #d31444;
-}
-
-.footer-credit {
-  color: #fff;
-  width: 100%;
   text-align: center;
 }
