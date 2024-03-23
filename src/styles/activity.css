@@ -45,3 +45,21 @@
 .about-image:hover {
   filter: none;
 }
+
+.affiliation-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.affiliation-table th,
+.affiliation-table td {
+  border: 1px solid #e5e7eb;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+.affiliation-table th {
+  background-color: #e5e7eb;
+  text-align: center;
+}
