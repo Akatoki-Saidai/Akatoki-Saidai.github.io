@@ -1,629 +1,243 @@
 ---
+import Layout from "../layouts/Layout.astro";
+import "../styles/activity.css";
 
+const pageTitle = "団体概要 | 埼玉大学宇宙工学サークルあかとき";
 ---
 
-<!doctype html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <title>埼玉大学宇宙工学サークルあかとき</title>
-
-    <!-- mobile responsive meta -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <meta name="description" content="This is meta description" />
-    <meta name="author" content="Akatoki Saidai" />
-
-    <!-- plugins -->
-
-    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="plugins/hover/hover.css" />
-    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css" />
-    <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css" />
-    <link
-      rel="stylesheet"
-      href="plugins/owl-carousel/owl.theme.default.min.css"
-    />
-    <link rel="stylesheet" href="plugins/text-animation/text-animation.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap"
-    />
-
-    <!-- Main Stylesheet -->
-
-    <link rel="stylesheet" href="css/style.min.css" media="screen" />
-    <link rel="stylesheet" href="css/complement.css" />
-    <link rel="stylesheet" href="css/mystyle.css" />
-
-    <!--Favicon-->
-    <link
-      href="images/akatoki_logo.png"
-      rel="shortcut icon"
-      type="image/x-icon"
-    />
-  </head>
-
-  <body>
-    <section class="menu fix" id="menu">
-      <nav>
-        <div class="menu-container">
-          <div class="desktop-menu-logo">
-            <a href="/"
-              ><img
-                class="img-fluid"
-                src="images/akatoki_logo.png"
-                alt="埼玉大学宇宙工学サークルあかときロゴ"
-                id="desktop-logo"
-              /></a
-            >
-          </div>
-          <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
-            <li class="menu-item hvr-underline-from-left">
-              <a href="./">ホーム</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="activity.html">団体概要</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="shinkan.html">新歓情報</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="photos.html">写真</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="mailto:aktk.saidai@gmail.com">問い合わせ</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="article.html">記事一覧</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="form.html">入会・継続フォーム</a>
-            </li>
-          </ul>
-
-          <div class="mobile-menu">
-            <a class="menu-link">
-              <div class="mobile-menu-nav">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </a>
-            <div class="mobile-menu-logo">
-              <a href="/"
-                ><img
-                  class="img-fluid"
-                  src="images/akatoki_logo.png"
-                  alt="あかとき　埼玉大学CanSat製作サークル"
-                /></a
-              >
-            </div>
-            <div class="menu-slider">
-              <nav>
-                <ul class="mobile-menu-list">
-                  <li class="hvr-shutter-out-vertical mobile-menu-item">
-                    <a href="./">ホーム</a>
-                  </li>
-
-                  <li class="hvr-shutter-out-vertical mobile-menu-item">
-                    <a href="activity.html">団体概要</a>
-                  </li>
-
-                  <li class="hvr-shutter-out-vertical mobile-menu-item">
-                    <a href="shinkan.html">新歓情報</a>
-                  </li>
-
-                  <li class="hvr-shutter-out-vertical mobile-menu-item">
-                    <a href="photos.html">写真</a>
-                  </li>
-
-                  <li class="hvr-shutter-out-vertical mobile-menu-item">
-                    <a href="mailto:aktk.saidai@gmail.com">問い合わせ</a>
-                  </li>
-
-                  <li class="hvr-shutter-out-vertical mobile-menu-item">
-                    <a href="article.html">記事一覧</a>
-                  </li>
-
-                  <li class="hvr-shutter-out-vertical mobile-menu-item">
-                    <a href="form.html">入会・継続フォーム</a>
-                  </li>
-                </ul>
-
-                <ul class="mobile-menu-icons list-inline">
-                  <a href="https://twitter.com/aktk_saidai" target="_blank"
-                    ><i class="fab fa-twitter fa-2x akatokicolor"></i></a
-                  >
-
-                  <a href="mailto:aktk.saidai@gmail.com"
-                    ><i class="fa-solid fa-envelope fa-2x akatokicolor"></i></a
-                  >
-
-                  <a
-                    href="https://www.youtube.com/channel/UCatV2sGwa6CtGaq9310GKxg"
-                    target="_blank"
-                    ><i class="fa-brands fa-youtube fa-2x akatokicolor"></i></a
-                  >
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </section>
-
-    <section class="menu unfix" id="menu">
-      <nav>
-        <div class="menu-container">
-          <div class="desktop-menu-logo">
-            <a href="/"
-              ><img
-                class="img-fluid"
-                src="images/akatoki_logo.png"
-                alt="埼玉大学宇宙工学サークルあかときロゴ"
-                id="desktop-logo"
-              /></a
-            >
-          </div>
-          <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
-            <li class="menu-item hvr-underline-from-left">
-              <a href="./">ホーム</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="activity.html">団体概要</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="shinkan.html">新歓情報</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="photos.html">写真</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="mailto:aktk.saidai@gmail.com">問い合わせ</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="article.html">記事一覧</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="form.html">入会・継続フォーム</a>
-            </li>
-          </ul>
-
-          <div class="mobile-menu">
-            <a class="menu-link">
-              <div class="mobile-menu-nav">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </a>
-            <div class="mobile-menu-logo">
-              <a href="/"
-                ><img
-                  class="img-fluid"
-                  src="images/akatoki_logo.png"
-                  alt="埼玉大学宇宙工学サークルあかときロゴ"
-                /></a
-              >
-            </div>
-          </div>
-        </div>
-      </nav>
-    </section>
-
-    <section class="about-me" id="about">
-      <div class="container">
-        <div class="row mt-5">
-          <div
-            class="col-sm about-me-text align-self-center justify-content-around"
-          >
-            <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
-              <h1>団体概要</h1>
-              <p class="mt-3">
-                埼玉大学宇宙工学サークルあかとき（以下，本サークル）は2018年5月に設立され，2019年4月に埼玉大学公認サークルとなりました．本サークルでは主に，CanSat（カンサット）と呼ばれる飲料水の缶サイズの小型人工衛星を製作しています．CanSatは実際に宇宙開発で用いられる類似した技術を使用しますが，実際に大気圏を離脱し人工衛星として運用する訳ではない為，模擬人工衛星とも呼ばれています．
-              </p>
-
-              <p>
-                CanSatの機体の設計には，コンピュータ支援設計ソフトであるCADを用いて機体の形状，材質，図面等を作成していきます．この際にコンピューター上で強度評価等を行いその機体に予想される負荷がかかった際に耐えられかなどを検証していきます．他には，CanSatには独自に製作した電子回路が搭載され，複数のセンサーで取得したデータをマイクロコンピュータによって処理し，機体制御を行います．完成した機体は毎年，秋田県能代市で実施される「能代宇宙イベント（Noshiro
-                Space
-                Event）」や鹿児島県種子島で実施される「種子島ロケットコンテスト」などの大会に出場し，出場チームとCanSatの性能や独自ミッションの達成に尽力しております．
-              </p>
-              <p>
-                本サークルでは独自に開発した放射線検出器を用いて，成層圏の放射線の研究も昨今では行っております．成層圏への到達には複数の他団体との技術協力を行っており，このような活動実績が評価され，2021年度に文部科学省より関電工賞・石井浩介賞を受賞し，その後埼玉大学より学生表彰を頂きました．
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="col-sm about-me-images wow fadeInUp mb-5"
-            data-wow-duration="1.5s"
-          >
-            <img class="img-fluid" src="images/cansat_sea.jpg" alt="about-me" />
-          </div>
-        </div>
-
-        <div class="row experience-skill">
-          <div class="col-11 skill wow fadeInUp mt-3" data-wow-duration="1.5s">
-            <h3>所属学科</h3>
-            <div class="skill-progress-bar">
-              <div class="clearfix">
-                <span class="skillbar-title"
-                  >工学部　機械工学・システムデザイン学科</span
-                >
-
-                <span class="skill-bar-percent">20人</span>
-
-                <div class="skillbar" data-percent="38%">
-                  <div class="skillbar-bar"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="clearfix">
-              <span class="skillbar-title">工学部　電気電子物理工学科</span>
-
-              <span class="skill-bar-percent">12人</span>
-
-              <div class="skillbar" data-percent="23%">
-                <div class="skillbar-bar"></div>
-              </div>
-            </div>
-
-            <div class="clearfix">
-              <span class="skillbar-title">理学部　物理学科</span>
-
-              <span class="skill-bar-percent">11人</span>
-
-              <div class="skillbar" data-percent="21%">
-                <div class="skillbar-bar"></div>
-              </div>
-            </div>
-
-            <div class="clearfix">
-              <span class="skillbar-title">埼玉大学大学院 理工学研究科</span>
-
-              <span class="skill-bar-percent">4人</span>
-
-              <div class="skillbar" data-percent="8%">
-                <div class="skillbar-bar"></div>
-              </div>
-            </div>
-
-            <div class="clearfix">
-              <span class="skillbar-title"
-                >その他（経済学科・乳幼児教育コース・情報工学科・東京理科大学工学部工業化学）</span
-              >
-
-              <span class="skill-bar-percent">6人</span>
-
-              <div class="skillbar" data-percent="11%">
-                <div class="skillbar-bar"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+<Layout pageTitle={pageTitle}>
+  <main>
+    <section>
+      <h1>団体概要</h1>
+      <div>
+        <p>
+          埼玉大学宇宙工学サークルあかとき（以下，本サークル）は2018年5月に設立され，2019年4月に埼玉大学公認サークルとなりました．本サークルでは主に，CanSat（カンサット）と呼ばれる飲料水の缶サイズの小型人工衛星を製作しています．CanSatは実際に宇宙開発で用いられる類似した技術を使用しますが，実際に大気圏を離脱し人工衛星として運用する訳ではない為，模擬人工衛星とも呼ばれています．
+          CanSatの機体の設計には，コンピュータ支援設計ソフトであるCADを用いて機体の形状，材質，図面等を作成していきます．この際にコンピューター上で強度評価等を行いその機体に予想される負荷がかかった際に耐えられかなどを検証していきます．他には，CanSatには独自に製作した電子回路が搭載され，複数のセンサーで取得したデータをマイクロコンピュータによって処理し，機体制御を行います．完成した機体は毎年，秋田県能代市で実施される「能代宇宙イベント（Noshiro
+          Space
+          Event）」や鹿児島県種子島で実施される「種子島ロケットコンテスト」などの大会に出場し，出場チームとCanSatの性能や独自ミッションの達成に尽力しております．
+          本サークルでは独自に開発した放射線検出器を用いて，成層圏の放射線の研究も昨今では行っております．成層圏への到達には複数の他団体との技術協力を行っており，このような活動実績が評価され，2021年度に文部科学省より関電工賞・石井浩介賞を受賞し，その後埼玉大学より学生表彰を頂きました．
+        </p>
+        <img src="/bg/cansat_sea.jpg" />
       </div>
-
-      <div class="col-11 experience wow fadeInUp mt-5" data-wow-duration="1.5s">
-        <h3>活動経歴</h3>
-        <ul class="experience-chart">
-          <li>
-            <div class="single-experience">
-              <h4>第18回種子島ロケットコンテストへ参加</h4>
-              <span>2022年3月</span>
-              <p>
-                本サークルから2つのチームが出場した．入賞には至らなかったが，SC-7を完成させた．
-              </p>
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-3">
-                    <img src="images/FNPACFDVQAULD_l.jpg" class="img-fluid" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <li>
-              <div class="single-experience">
-                <h4>埼玉大学より学生表彰</h4>
-                <span>2021年10月</span>
-                <p>
-                  本サークルを埼玉大学ホームページ（<a
-                    href="http://www.saitama-u.ac.jp/entrance/scweb/column/column05/1034/"
-                    target="_blank">リンク</a
-                  >）にて紹介して頂き，さらに令和3年度10月期
-                  学生表彰にて本サークルが埼玉大学 学長より表彰状を授与（<a
-                    href="http://www.saitama-u.ac.jp/support/kagai/08/20211006hyousyou.pdf"
-                    target="_blank">リンク</a
-                  >）．学生表彰とは埼玉大学学生表彰規則に明記される：(1)社会的に学術研究等の成果が優れていると認められた，(2)課外活動の成果が特に顕著であり，かつ，課外活動の振興に功績があったと認められる，(3)社会活動において優れた評価を受け，かつ，本学の名誉を著しく高めたと認められる，(4)その他本学学生として表彰に価すると認められる，に該当する者に与える表彰である．
-                </p>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-5">
-                      <img src="images/b1.png" class="img-fluid" />
-                    </div>
-                    <div class="col-md-5">
-                      <img src="images/b2.png" class="img-fluid" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <li>
-                <div class="single-experience">
-                  <h4>
-                    土壌を採取して小型モデルロケットで帰還するCanSat開発完了
-                  </h4>
-                  <p>
-                    実際の惑星探査を想定し，土壌採取を行い本サークルで初となる小型モデルロケットを用いて，目的地にサンプルを持ち帰るCanSat「SC-5」を製作した．本機体は第17回種子島ロケットコンテスト大会，第17回能代宇宙イベント（日程により断念）に向けて製作された．小型モデルロケットの製作には<a
-                      href="https://www.iot.ac.jp/campuslife/project/cosmos/"
-                      target="_blank"
-                      >ものつくり大学宇宙開発研究プロジェクト『MAXS』</a
-                    >に技術協力して頂いている．
-                  </p>
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img
-                          src="images/E6lpWy2VoAIDTu2.jpg"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="col-md-4">
-                        <img src="images/SC5-1.jpg" class="img-fluid" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="single-experience">
-                  <h4>第17回種子島ロケットコンテスト大会にて優勝</h4>
-                  <span>2021年3月</span>
-                  <p>
-                    種子島ロケットコンテストCanSat部門にて本サークルチーム「ヘキサゴン」が優勝．第17回はコロナウイルス感染症を懸念しオンラインで実施．
-                  </p>
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-3">
-                        <img src="images/a3.png" class="img-fluid" />
-                      </div>
-                      <div class="col-md-3">
-                        <img
-                          src="images/ExYMNmdVEAEP87m.jpg"
-                          class="img-fluid"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="single-experience">
-                  <h4>御宿共同打上実験</h4>
-                  <span>2021年3月</span>
-                  <p>
-                    <a href="https://corerocket.net/" target="_blank"
-                      >CORE（Challengers of Rocket Engineering）</a
-                    >が製作する「ひばり１」ロケットに本サークルが製作したCanSat「SC-4」を搭載し，見事サクセスクライテリア100%達成を果たす
-                  </p>
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-3">
-                        <img
-                          src="images/Ewru-ZFUUAMvZch.jpg"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <iframe
-                          src="https://www.youtube.com/embed/CmlcOCtneyg"
-                          width="100%"
-                          height="100%"
-                          frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="single-experience">
-                  <h4>
-                    文部科学省主催 第10回サイエンス・インカレにてダブル受賞
-                  </h4>
-                  <span>2021年3月</span>
-                  <p>
-                    第16回能代宇宙イベントにおいてロケットにより打ち上げられる予定であった模擬人工衛星CanSat（機体名：SC-4）に搭載可能な，小型シンチレーション式放射線検出器の開発・性能評価を行った．これが評価され，文部科学省主催第10回サイエンス・インカレにて関電工賞・石井浩介賞のダブル受賞を果たす．
-                  </p>
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md">
-                        <img
-                          src="images/NSE16poster_rev4.png"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="col-md">
-                        <img
-                          src="images/NSE16poster_rev5.png"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="col-md">
-                        <img
-                          src="images/EvTnlKhVcAEzBJr.jpg"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="col-md">
-                        <img src="images/a1.jpg" class="img-fluid" />
-                      </div>
-                      <div class="col-md">
-                        <img src="images/a2.jpg" class="img-fluid" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="single-experience">
-                  <h4>第16回能代宇宙イベント</h4>
-                  <span>2020年11月</span>
-                  <p>
-                    <a href="https://corerocket.net/" target="_blank"
-                      >CORE（Challengers of Rocket Engineering）</a
-                    >が製作する「ひばり１」ロケットに本サークルが製作したCanSat「SC-4」を搭載し，高度3kmからの放射線などの様々なデータを取得する予定であったが，天候の影響で打ち上げを断念．
-                  </p>
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md">
-                        <img src="images/1606673483426.jpg" class="img-fluid" />
-                      </div>
-                      <div class="col-md">
-                        <img src="images/1606673482174.png" class="img-fluid" />
-                      </div>
-                      <div class="col-md">
-                        <img src="images/1606673476363.jpg" class="img-fluid" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="single-experience">
-                  <h4>ロゴマークをリニューアルする</h4>
-                  <span>2020年4月</span>
-                  <p>
-                    デザイナー：岡田夏希（理学部物理学科）によって作成された．
-                  </p>
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-3">
-                        <img src="images/akatoki_logo.png" class="img-fluid" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="single-experience">
-                  <h4>第16回種子島ロケットコンテスト中止</h4>
-                  <span>2020年3月</span>
-                </div>
-              </li>
-
-              <li>
-                <div class="single-experience">
-                  <h4>第15回能代宇宙イベント参加</h4>
-                  <span>2019年8月</span>
-                </div>
-              </li>
-
-              <li>
-                <div class="single-experience">
-                  <h4>埼玉大学の公認サークルになる</h4>
-                  <span>2019年4月</span>
-                </div>
-              </li>
-
-              <li>
-                <div class="single-experience">
-                  <h4>第15回種子島ロケットコンテストに参加</h4>
-                  <span>2019年3月</span>
-                </div>
-              </li>
-
-              <li>
-                <div class="single-experience">
-                  <h4>埼玉大学宇宙工学サークルあかときを設立</h4>
-                  <span>2018年5月</span>
-                  <p>
-                    初代代表：石﨑大貴（理学部物理学科）らによって設立された．
-                  </p>
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-3">
-                        <img src="images/AKTK.jpg" class="img-fluid" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </li>
-          </li>
-        </ul>
+    </section>
+    <section>
+      <h1>所属学科</h1>
+      <table>
+        <tr>
+          <th>所属</th>
+          <th>人数</th>
+        </tr>
+        <tr>
+          <td>工学部 機械工学・システムデザイン学科</td>
+          <td>20人</td>
+        </tr>
+        <tr>
+          <td>工学部 電気電子物理工学科</td>
+          <td>12人</td>
+        </tr>
+        <tr>
+          <td>理学部 物理学科</td>
+          <td>11人</td>
+        </tr>
+        <tr>
+          <td>埼玉大学大学院 理工学研究科</td>
+          <td>4人</td>
+        </tr>
+        <tr>
+          <td
+            >その他（経済学科・乳幼児教育コース・情報工学科・東京理科大学工学部工業化学）</td
+          >
+          <td>6人</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h1>活動経歴</h1>
+      <table>
+        <tr>
+          <td>
+            <span></span>
+            <span></span>
+          </td>
+          <td>
+            <h2>第18回種子島ロケットコンテストへ参加</h2>
+            <time>2022年3月</time>
+            <p>
+              本サークルから2つのチームが出場した．入賞には至らなかったが，SC-7を完成させた．
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span></span>
+            <span></span>
+          </td>
+          <td>
+            <h2>埼玉大学より学生表彰</h2>
+            <time>2021年10月</time>
+            <p>
+              本サークルを埼玉大学ホームページ（<a
+                href="http://www.saitama-u.ac.jp/entrance/scweb/column/column05/1034/"
+                >リンク</a
+              >）にて紹介して頂き，さらに令和3年度10月期
+              学生表彰にて本サークルが埼玉大学 学長より表彰状を授与（<a
+                href="http://www.saitama-u.ac.jp/support/kagai/08/20211006hyousyou.pdf"
+                >リンク</a
+              >）．学生表彰とは埼玉大学学生表彰規則に明記される：(1)社会的に学術研究等の成果が優れていると認められた，(2)課外活動の成果が特に顕著であり，かつ，課外活動の振興に功績があったと認められる，(3)社会活動において優れた評価を受け，かつ，本学の名誉を著しく高めたと認められる，(4)その他本学学生として表彰に価すると認められる，に該当する者に与える表彰である．
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span></span>
+            <span></span>
+          </td>
+          <td>
+            <h2>土壌を採取して小型モデルロケットで帰還するCanSat開発完了</h2>
+            <time></time>
+            <p>
+              実際の惑星探査を想定し，土壌採取を行い本サークルで初となる小型モデルロケットを用いて，目的地にサンプルを持ち帰るCanSat「SC-5」を製作した．本機体は第17回種子島ロケットコンテスト大会，第17回能代宇宙イベント（日程により断念）に向けて製作された．小型モデルロケットの製作には<a
+                href="https://www.iot.ac.jp/campuslife/project/cosmos/"
+                >ものつくり大学宇宙開発研究プロジェクト『MAXS』</a
+              >に技術協力して頂いている．
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span></span>
+            <span></span>
+          </td>
+          <td>
+            <h2>第17回種子島ロケットコンテストへ参加</h2>
+            <time>2021年3月</time>
+            <p>
+              種子島ロケットコンテストCanSat部門にて本サークルチーム「ヘキサゴン」が優勝．第17回はコロナウイルス感染症を懸念しオンラインで実施．
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span></span>
+            <span></span>
+          </td>
+          <td>
+            <h2>御宿共同打上実験</h2>
+            <time>2021年3月</time>
+            <p>
+              <a href="https://corerocket.net/"
+                >CORE（Challengers of Rocket Engineering）</a
+              >が製作する「ひばり１」ロケットに本サークルが製作したCanSat「SC-4」を搭載し，見事サクセスクライテリア100%達成を果たす
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span></span>
+            <span></span>
+          </td>
+          <td>
+            <h2>文部科学省主催 第10回サイエンス・インカレにてダブル受賞</h2>
+            <time>2021年3月</time>
+            <p>
+              第16回能代宇宙イベントにおいてロケットにより打ち上げられる予定であった模擬人工衛星CanSat（機体名：SC-4）に搭載可能な，小型シンチレーション式放射線検出器の開発・性能評価を行った．これが評価され，文部科学省主催第10回サイエンス・インカレにて関電工賞・石井浩介賞のダブル受賞を果たす．
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span></span>
+            <span></span>
+          </td>
+          <td>
+            <h2>第16回能代宇宙イベント</h2>
+            <time>2020年11月</time>
+            <p>
+              <a href="https://corerocket.net/"
+                >CORE（Challengers of Rocket Engineering）</a
+              >が製作する「ひばり１」ロケットに本サークルが製作したCanSat「SC-4」を搭載し，高度3kmからの放射線などの様々なデータを取得する予定であったが，天候の影響で打ち上げを断念．
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span></span>
+            <span></span>
+          </td>
+          <td>
+            <h2>ロゴマークをリニューアルする</h2>
+            <time>2020年4月</time>
+            <p>デザイナー：岡田夏希（理学部物理学科）によって作成された．</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span></span>
+            <span></span>
+          </td>
+          <td>
+            <h2>第16回種子島ロケットコンテスト中止</h2>
+            <time>2020年3月</time>
+            <p></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span></span>
+            <span></span>
+          </td>
+          <td>
+            <h2>第15回能代宇宙イベント参加</h2>
+            <time>2019年8月</time>
+            <p></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span></span>
+            <span></span>
+          </td>
+          <td>
+            <h2>埼玉大学の公認サークルになる</h2>
+            <time>2019年4月</time>
+            <p></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span></span>
+            <span></span>
+          </td>
+          <td>
+            <h2>第15回種子島ロケットコンテストに参加</h2>
+            <time>2019年3月</time>
+            <p></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span></span>
+            <span></span>
+          </td>
+          <td>
+            <h2>埼玉大学宇宙工学サークルあかときを設立</h2>
+            <time>2018年5月</time>
+            <p>初代代表：石﨑大貴（理学部物理学科）らによって設立された．</p>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h1>団体活動費</h1>
+      <div>
+        <p>
+          本サークルは2021年度までプロジェクト毎に支出分をその開発メンバーで負担してきました。つまり、どのプロジェクトにも一切参加することが無ければ個人の負担分はありませんでした。
+          また、大きなプロジェクトについては、埼玉大学学生後援会様より多額の支援を頂きミッション成功に尽力して参りました。その他に開発に必要不可欠なテスター、オシロスコープ、3Dプリンターといった物品等の購入についてはガクセイ協賛金や、協賛頂いた企業様からのご支援、本サークルの賞金等で購入させて頂いておりました。
+          しかしながら、このような収入源での本サークルの維持は難しいと判断し、昨年度（2022年度）より年会費制度を導入しました。
+          本サークル入会届を提出した際に年会費2,000円を、継続届を提出した際に2,500円をお支払い頂きます。宜しくお願い致します。
+        </p>
+        <img />
       </div>
-
-      <section class="services" id="money">
-        <div class="container">
-          <div class="row about-me-holder">
-            <div
-              class="col-lg-6 col-md-6 col-sm-6 about-me-text d-flex align-self-center"
-            >
-              <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
-                <h1>団体活動費</h1>
-                <p class="mt-3">
-                  本サークルは2021年度までプロジェクト毎に支出分をその開発メンバーで負担してきました。つまり、どのプロジェクトにも一切参加することが無ければ個人の負担分はありませんでした。
-                </p>
-
-                <p>
-                  また、大きなプロジェクトについては、埼玉大学学生後援会様より多額の支援を頂きミッション成功に尽力して参りました。その他に開発に必要不可欠なテスター、オシロスコープ、3Dプリンターといった物品等の購入についてはガクセイ協賛金や、協賛頂いた企業様からのご支援、本サークルの賞金等で購入させて頂いておりました。
-                </p>
-
-                <p>
-                  しかしながら、このような収入源での本サークルの維持は難しいと判断し、昨年度（2022年度）より年会費制度を導入しました。
-                </p>
-                <p>
-                  本サークル入会届を提出した際に年会費2,000円を、継続届を提出した際に2,500円をお支払い頂きます。宜しくお願い致します。
-                </p>
-
-                <p></p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-6 col-sm-6 col-9 wow fadeInUp"
-              data-wow-duration="1.5s"
-            >
-              <img class="img-fluid" src="images/aktkmoney1.png" alt="" />
-            </div>
-          </div>
-
-          <!--<div class="col-11 experience wow fadeInUp mt-5" data-wow-duration="1.5s">
-         <h3>出費例</h3>
-      <h4>２つのプロジェクトに参加している太郎さんの場合</h4> 
-        <div class="text-left mt-4">
-          <img src="images/aktkmoney2.png" alt="" width="60%">
-        </div>
-      </div>-->
-        </div>
-
-        <a href="#home" class="scroll-up hvr-icon-up"><img src="" /></a>
-      </section>
-    </section></body
-  >
-</html>
+    </section>
+  </main>
+</Layout>
