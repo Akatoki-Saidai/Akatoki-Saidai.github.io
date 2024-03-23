@@ -5,6 +5,14 @@ body {
 
 /* header navigation */
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
 .navigation-list {
   display: flex;
   justify-content: space-around;
