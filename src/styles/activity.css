@@ -1,0 +1,47 @@
+.main-container {
+  padding: 0 10%;
+  width: 80%;
+}
+
+.content-title {
+  position: relative;
+  padding-top: 10px;
+  text-align: center;
+  color: #6f6f6f;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.content-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  border-top: 5px solid #6f6f6f;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-description-container {
+  width: 60%;
+}
+
+.about-description {
+  margin-top: 0;
+  color: #6f6f6f;
+}
+
+.about-image {
+  width: 35%;
+  margin: auto;
+  filter: grayscale(100%);
+  transition: filter linear 0.3s;
+}
+
+.about-image:hover {
+  filter: none;
+}
