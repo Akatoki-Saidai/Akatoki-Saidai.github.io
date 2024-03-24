@@ -1,0 +1,145 @@
+.main-container {
+  padding: 56px 10% 0 10%;
+  width: 80%;
+}
+
+.content-title {
+  position: relative;
+  padding-top: 10px;
+  text-align: center;
+  color: #6f6f6f;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.content-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  border-top: 5px solid #6f6f6f;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-description-container {
+  width: 60%;
+}
+
+.about-description {
+  margin-top: 0;
+  color: #6f6f6f;
+  line-height: 32px;
+}
+
+.about-image {
+  width: 35%;
+  margin: auto;
+  filter: grayscale(100%);
+  transition: filter linear 0.3s;
+}
+
+.about-image:hover {
+  filter: none;
+}
+
+.affiliation-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.affiliation-table th,
+.affiliation-table td {
+  border: 1px solid #e5e7eb;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+.affiliation-table th {
+  background-color: #e5e7eb;
+  text-align: center;
+}
+
+.history-time {
+  width: 96px;
+  text-align: center;
+  vertical-align: top;
+  height: 48px;
+  line-height: 48px;
+  font-size: 14px;
+}
+
+.history-timeline {
+  width: 48px;
+  vertical-align: top;
+  height: 100%;
+  position: relative;
+}
+
+.history-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  padding: 8px;
+  margin: 12px;
+}
+
+.history-dot::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: .5rem;
+  height: .5rem;
+  border-radius: 100%;
+  background-color: #6f6f6f;
+}
+
+.history-line {
+  display: block;
+  width: 2px;
+  background-color: #6f6f6f;
+  position: absolute;
+  top: 48px;
+  bottom: 0;
+  left: 1.5rem;
+}
+
+.history-line-start {
+  display: none;
+}
+
+.history-content h2 {
+  height: 48px;
+  line-height: 48px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.history-content p {
+  color: #6f6f6f;
+  line-height: 32px;
+}
+
+.history-content p a {
+  color: #6f6f6f;
+}
+
+.expences-container {
+  display: flex;
+}
+
+.expences-description {
+  width: 48%;
+  line-height: 32px;
+  color: #6f6f6f;
+}
+
+.expences-image {
+  width: 48%;
+  margin: auto;
+}
