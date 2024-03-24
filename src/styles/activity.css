@@ -143,3 +143,15 @@
   width: 48%;
   margin: auto;
 }
+
+.history-img-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.history-img-container img {
+  height: 16rem;
+  width: auto;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
