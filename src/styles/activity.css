@@ -128,3 +128,18 @@
 .history-content p a {
   color: #6f6f6f;
 }
+
+.expences-container {
+  display: flex;
+}
+
+.expences-description {
+  width: 48%;
+  line-height: 32px;
+  color: #6f6f6f;
+}
+
+.expences-image {
+  width: 48%;
+  margin: auto;
+}
