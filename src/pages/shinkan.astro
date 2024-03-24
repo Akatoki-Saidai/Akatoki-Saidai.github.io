@@ -1,348 +1,111 @@
-<!doctype html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <title>埼玉大学宇宙工学サークルあかとき/テスト</title>
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/shinkan.css";
 
-    <!-- mobile responsive meta -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <meta name="description" content="This is meta description" />
-    <meta name="author" content="Akatoki Saidai" />
-
-    <!-- plugins -->
-
-    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="plugins/hover/hover.css" />
-    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css" />
-    <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css" />
-    <link
-      rel="stylesheet"
-      href="plugins/owl-carousel/owl.theme.default.min.css"
-    />
-    <link rel="stylesheet" href="plugins/text-animation/text-animation.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap"
-    />
-
-    <!-- Main Stylesheet -->
-
-    <link rel="stylesheet" href="css/style.min.css" media="screen" />
-    <link rel="stylesheet" href="css/complement.css" />
-    <link rel="stylesheet" href="css/mystyle.css" />
-
-    <!--Favicon-->
-    <link
-      href="images/akatoki_logo.png"
-      rel="shortcut icon"
-      type="image/x-icon"
-    />
-  </head>
-
-  <body>
-    <section class="menu fix" id="menu">
-      <nav>
-        <div class="menu-container">
-          <div class="desktop-menu-logo">
-            <a href="/"
-              ><img
-                class="img-fluid"
-                src="images/akatoki_logo.png"
-                alt="埼玉大学宇宙工学サークルあかときロゴ"
-                id="desktop-logo"
-              /></a
-            >
-          </div>
-          <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
-            <li class="menu-item hvr-underline-from-left">
-              <a href="./">ホーム</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="activity.html">団体概要</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="shinkan.html">新歓情報</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="photos.html">写真</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="mailto:aktk.saidai@gmail.com">問い合わせ</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="article.html">記事一覧</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="form.html">入会・継続フォーム</a>
-            </li>
-          </ul>
-
-          <div class="mobile-menu">
-            <a class="menu-link">
-              <div class="mobile-menu-nav">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </a>
-            <div class="mobile-menu-logo">
-              <a href="/"
-                ><img
-                  class="img-fluid"
-                  src="images/akatoki_logo.png"
-                  alt="あかとき　埼玉大学CanSat製作サークル"
-                /></a
-              >
-            </div>
-            <div class="menu-slider">
-              <nav>
-                <ul class="mobile-menu-list">
-                  <li class="hvr-shutter-out-vertical mobile-menu-item">
-                    <a href="./">ホーム</a>
-                  </li>
-
-                  <li class="hvr-shutter-out-vertical mobile-menu-item">
-                    <a href="activity.html">団体概要</a>
-                  </li>
-
-                  <li class="hvr-shutter-out-vertical mobile-menu-item">
-                    <a href="shinkan.html">新歓情報</a>
-                  </li>
-
-                  <li class="hvr-shutter-out-vertical mobile-menu-item">
-                    <a href="photos.html">写真</a>
-                  </li>
-
-                  <li class="hvr-shutter-out-vertical mobile-menu-item">
-                    <a href="mailto:aktk.saidai@gmail.com">問い合わせ</a>
-                  </li>
-
-                  <li class="hvr-shutter-out-vertical mobile-menu-item">
-                    <a href="article.html">記事一覧</a>
-                  </li>
-
-                  <li class="hvr-shutter-out-vertical mobile-menu-item">
-                    <a href="form.html">入会・継続フォーム</a>
-                  </li>
-                </ul>
-
-                <ul class="mobile-menu-icons list-inline">
-                  <a href="https://twitter.com/aktk_saidai" target="_blank"
-                    ><i class="fab fa-twitter fa-2x akatokicolor"></i></a
-                  >
-
-                  <a href="mailto:aktk.saidai@gmail.com"
-                    ><i class="fa-solid fa-envelope fa-2x akatokicolor"></i></a
-                  >
-
-                  <a
-                    href="https://www.youtube.com/channel/UCatV2sGwa6CtGaq9310GKxg"
-                    target="_blank"
-                    ><i class="fa-brands fa-youtube fa-2x akatokicolor"></i></a
-                  >
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </nav>
+const pageTitle = "新歓情報 | 埼玉大学宇宙工学サークルあかとき";
+---
+<Layout pageTitle={pageTitle}>
+  <main class="main-container">
+    <section class="schedule">
+      <h1 class="content-title">新歓スケジュール</h1>
+      <table class="schedule-table">
+        <tr>
+          <td class="schedule-time"><time>TBD</time></td>
+          <td class="schedule-timeline">
+            <span class="schedule-dot"></span>
+            <span class="schedule-line schedule-line-start"></span>
+          </td>
+          <td class="schedule-content">
+            <h2>本年度の新歓スケジュールは未定です</h2>
+          </td>
+        </tr>
+      </table>
     </section>
-
-    <section class="menu unfix" id="menu">
-      <nav>
-        <div class="menu-container">
-          <div class="desktop-menu-logo">
-            <a href="/"
-              ><img
-                class="img-fluid"
-                src="images/akatoki_logo.png"
-                alt="埼玉大学宇宙工学サークルあかときロゴ"
-                id="desktop-logo"
-              /></a
-            >
-          </div>
-          <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
-            <li class="menu-item hvr-underline-from-left">
-              <a href="./">ホーム</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="activity.html">団体概要</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="shinkan.html">新歓情報</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="photos.html">写真</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="mailto:aktk.saidai@gmail.com">問い合わせ</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="article.html">記事一覧</a>
-            </li>
-
-            <li class="menu-item hvr-underline-from-left">
-              <a href="form.html">入会・継続フォーム</a>
-            </li>
-          </ul>
-
-          <div class="mobile-menu">
-            <a class="menu-link">
-              <div class="mobile-menu-nav">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </a>
-            <div class="mobile-menu-logo">
-              <a href="/"
-                ><img
-                  class="img-fluid"
-                  src="images/akatoki_logo.png"
-                  alt="埼玉大学宇宙工学サークルあかときロゴ"
-                /></a
-              >
-            </div>
-          </div>
-        </div>
-      </nav>
+    <section class="ex-schedule">
+      <h1 class="content-title">昨年度の新歓スケジュール</h1>
+      <p class="content-description">昨年度の新歓スケジュールは以下の通りです。</p>
+      <table class="schedule-table">
+        <tr>
+          <td class="schedule-time"><time>2023-04-07</time></td>
+          <td class="schedule-timeline">
+            <span class="schedule-dot"></span>
+            <span class="schedule-line"></span>
+          </td>
+          <td class="schedule-content">
+            <h2>対面活動</h2>
+            <time>9:30 ～ 17:30</time>
+          </td>
+        </tr>
+        <tr>
+          <td class="schedule-time"><time>2023-04-08</time></td>
+          <td class="schedule-timeline">
+            <span class="schedule-dot"></span>
+            <span class="schedule-line"></span>
+          </td>
+          <td class="schedule-content">
+            <h2>対面活動</h2>
+            <time>10:00 ～ 15:00</time>
+          </td>
+        </tr>
+        <tr>
+          <td class="schedule-time"><time>2023-04-10</time></td>
+          <td class="schedule-timeline">
+            <span class="schedule-dot"></span>
+            <span class="schedule-line"></span>
+          </td>
+          <td class="schedule-content">
+            <h2>対面活動</h2>
+            <time>13:00 ～ 20:00</time>
+          </td>
+        </tr>
+        <tr>
+          <td class="schedule-time"><time>2023-04-11</time></td>
+          <td class="schedule-timeline">
+            <span class="schedule-dot"></span>
+            <span class="schedule-line"></span>
+          </td>
+          <td class="schedule-content">
+            <h2>対面活動</h2>
+            <time>13:00 ～ 20:00</time>
+          </td>
+        </tr>
+        <tr>
+          <td class="schedule-time"><time>2023-04-15</time></td>
+          <td class="schedule-timeline">
+            <span class="schedule-dot"></span>
+            <span class="schedule-line"></span>
+          </td>
+          <td class="schedule-content">
+            <h2>対面活動</h2>
+            <p>小会議室</p>
+            <time>15:00 ～ 18:00</time>
+          </td>
+        </tr>
+        <tr>
+          <td class="schedule-time"><time>2023-04-19</time></td>
+          <td class="schedule-timeline">
+            <span class="schedule-dot"></span>
+            <span class="schedule-line"></span>
+          </td>
+          <td class="schedule-content">
+            <h2>対面活動</h2>
+            <p>小会議室</p>
+            <time>18:10 ～ 19:30</time>
+          </td>
+        </tr>
+        <tr>
+          <td class="schedule-time"><time>2023-04-22</time></td>
+          <td class="schedule-timeline">
+            <span class="schedule-dot"></span>
+            <span class="schedule-line schedule-line-end"></span>
+          </td>
+          <td class="schedule-content">
+            <h2>対面活動</h2>
+            <p>音楽鑑賞室</p>
+            <time>15:00 ～ 18:00</time>
+          </td>
+        </tr>
+      </table>
     </section>
-
-    <section class="services" id="pr">
-      <div class="container">
-        <div class="row">
-          <div class="text-center">
-            <img src="images/e_shinkan.png" width="80%" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="services" id="service">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto col-sm-12">
-            <div class="wow fadeInUp" data-wow-duration="1.5s">
-              <div class="services-heading">
-                <div class="bar"></div>
-                <h1>新歓スケジュール</h1>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md">
-                      <a
-                        class="twitter-timeline"
-                        data-lang="ja"
-                        data-height="700"
-                        data-width="80%"
-                        href="https://twitter.com/AKTK_shinkan?ref_src=twsrc%5Etfw"
-                        >Tweets by AKTK_shinkan</a
-                      >
-                      <script
-                        async
-                        src="https://platform.twitter.com/widgets.js"
-                        charset="utf-8"></script>
-                    </div>
-
-                    <div class="timeline-area col-md">
-                      <div class="container">
-                        <div class="all-timelines">
-                          <!--SINGLE TIMELINE-->
-                          <div class="single-timeline d-flex-2">
-                            <div class="timeline-blank"></div>
-                            <div class="timeline-text d-flex-2">
-                              <span>
-                                <h6>2023年4月7日(金)</h6> 対面活動 9:30〜17:00
-                              </span>
-                              <div class="t-square"></div>
-                            </div>
-                          </div>
-                          <!--SINGLE TIMELINE-->
-                          <div class="single-timeline d-flex-2">
-                            <div class="timeline-blank"></div>
-                            <div class="timeline-text d-flex-2">
-                              <span>
-                                <h6>2023年4月8日(土)</h6> 対面活動 10:00〜15:00
-                              </span>
-                              <div class="t-square"></div>
-                            </div>
-                          </div>
-                          <!--SINGLE TIMELINE-->
-                          <div class="single-timeline d-flex-2">
-                            <div class="timeline-blank"></div>
-                            <div class="timeline-text d-flex-2">
-                              <span>
-                                <h6>2023年4月10日(月)</h6> 対面活動 13:00〜20:00
-                              </span>
-                              <div class="t-square"></div>
-                            </div>
-                          </div>
-                          <!--SINGLE TIMELINE-->
-                          <div class="single-timeline d-flex-2">
-                            <div class="timeline-blank"></div>
-                            <div class="timeline-text d-flex-2">
-                              <span>
-                                <h6>2023年4月11日(火)</h6> 対面活動 13:00〜20:00
-                              </span>
-                              <div class="t-square"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--SINGLE TIMELINE-->
-                      <div class="single-timeline d-flex-2">
-                        <div class="timeline-blank"></div>
-                        <div class="timeline-text d-flex-2">
-                          <span>
-                            <h6>2023年4月15日(土)</h6> 対面活動 15:00〜18:00 小会議室
-                          </span>
-                          <div class="t-square"></div>
-                        </div>
-                      </div>
-                      <!--SINGLE TIMELINE-->
-                      <div class="single-timeline d-flex-2">
-                        <div class="timeline-blank"></div>
-                        <div class="timeline-text d-flex-2">
-                          <span>
-                            <h6>2023年4月19日(水)</h6> 対面活動 18:10〜19:30 小会議室
-                          </span>
-                          <div class="t-square"></div>
-                        </div>
-                      </div>
-                      <!--SINGLE TIMELINE-->
-                      <div class="single-timeline d-flex-2">
-                        <div class="timeline-blank"></div>
-                        <div class="timeline-text d-flex-2">
-                          <span>
-                            <h6>2023年4月22日(土)</h6> 対面活動 15:00〜18:00 音楽鑑賞室
-                          </span>
-                          <div class="t-square"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <a href="#home" class="scroll-up hvr-icon-up"><img src="" /></a>
-    </section>
-  </body>
-</html>
+  </main>
+</Layout>
