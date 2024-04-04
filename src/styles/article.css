@@ -1,0 +1,66 @@
+.main-container {
+  padding: 56px 10% 0 10%;
+}
+
+.content-title {
+  position: relative;
+  padding-top: 10px;
+  text-align: center;
+  color: #6f6f6f;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.content-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  border-top: 5px solid #6f6f6f;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 5%;
+  padding: 2rem 0 4rem 0;
+}
+
+.card {
+  border-radius: 0.5rem;
+  background-color: #fcfcfc;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.card:hover, .card:active {
+  background-color: #fafafa;
+}
+
+.card-time {
+  color: #6f6f6f;
+  font-size: 0.75rem;
+}
+
+.card-title {
+  margin: 0.5rem;
+  color: #444444;
+}
+
+.card-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card-item {
+  font-size: 0.875rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #f0eeee;
+  color: #444444;
+}
