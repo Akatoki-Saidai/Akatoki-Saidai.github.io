@@ -39,8 +39,8 @@ const photos = [
 <Layout pageTitle={pageTitle}>
   <main class="main-container">
     <ul class="gallery">
-      {photos.map((photo, index) => (
-        <li key={index}>
+      {photos.map((photo) => (
+        <li>
           <a href={photo}>
             <img src={photo}/>
           </a>
