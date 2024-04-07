@@ -1,0 +1,97 @@
+.main-container {
+  padding: 56px 10% 0 10%;
+}
+
+.photos-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  columns: 4;
+}
+
+.photos-container img {
+  width: 30%;
+}
+
+.gallery {
+  columns: 4;
+  height: auto;
+  padding: 1rem;
+}
+
+.gallery li {
+  margin-bottom: 20px;
+
+}
+
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+
+}
+
+
+@media only screen and (max-width: 900px) {
+  .gallery {
+    columns: 3;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery {
+    columns: 2;
+  }
+}
+
+
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #333;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+p {
+  margin: 0 10px 10px 10px;
+  word-wrap: break-word;
+}
+
+.flipLeft {
+  animation-name: flipLeft;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  perspective-origin: left center;
+  opacity: 0;
+}
+
+@keyframes flipLeft {
+  from {
+    transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+    opacity: 1;
+  }
+}
