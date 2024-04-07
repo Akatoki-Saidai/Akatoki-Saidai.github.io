@@ -21,8 +21,6 @@
   border-top: 5px solid #6f6f6f;
 }
 
-.form-container {}
-
 .form-title {
   font-size: 20px;
   margin: 0;
@@ -63,7 +61,7 @@
   margin: 4px;
 }
 
-.form-radio-input:checked + label {
+.form-radio-input:checked+label {
   color: #80bdff;
 }
 
