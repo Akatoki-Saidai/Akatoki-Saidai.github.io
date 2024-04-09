@@ -1,0 +1,16 @@
+---
+import Layout from './Layout.astro';
+import '../styles/markdown.css';
+
+const { frontmatter } = Astro.props;
+const pageTitle = frontmatter.title + " | 記事一覧 | 埼玉大学宇宙工学サークルあかとき";
+---
+
+<Layout pageTitle={pageTitle}>
+  <article class="markdown-body">
+    <h1>{frontmatter.title}</h1>
+    <time>{frontmatter.pubDate}</time>
+    <span>{frontmatter.author}</span>
+    <slot />
+  </article>
+</Layout>
