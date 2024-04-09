@@ -29,6 +29,10 @@ header {
   flex: 1;
 }
 
+.navigation-item:has(.hamburger-menu) {
+  display: none;
+}
+
 .navigation-item-logo {
   height: 48px;
   width: 128px;
@@ -50,6 +54,21 @@ header {
 .navigation-item-link:hover {
   background-color: #fff;
   color: #6f6f6f;
+}
+
+.hamburger-menu {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.25rem;
+  margin: 0.5rem;
+  background-color: #6f6f6f;
+  border: none;
+}
+
+.hamburger-menu:hover {
+  background-color: #5f5f5f;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .footer {
@@ -105,4 +124,21 @@ header {
   color: #fff;
   width: 100%;
   text-align: center;
+}
+
+@media (max-width: 1186px) {
+  .navigation-list {
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  .navigation-item {
+    flex: none;
+  }
+  .navigation-item:has(.navigation-item-link) {
+    display: none;
+  }
+
+  .navigation-item:has(.hamburger-menu) {
+    display: block;
+  }
 }
