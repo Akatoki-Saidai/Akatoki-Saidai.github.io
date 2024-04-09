@@ -24,12 +24,12 @@ header {
   height: 56px;
 }
 
-.navigation-list-item {
+.navigation-item {
   height: 56px;
   flex: 1;
 }
 
-.navigation-list-item-logo {
+.navigation-item-logo {
   height: 48px;
   width: 128px;
   display: block;
@@ -37,7 +37,7 @@ header {
   margin: auto;
 }
 
-.navigation-list-item-link {
+.navigation-item-link {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
@@ -47,7 +47,7 @@ header {
   padding: 16px 0;
 }
 
-.navigation-list-item-link:hover {
+.navigation-item-link:hover {
   background-color: #fff;
   color: #6f6f6f;
 }
