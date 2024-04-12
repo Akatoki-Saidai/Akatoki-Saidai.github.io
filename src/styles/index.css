@@ -459,3 +459,18 @@
   line-height: 1.5em;
   text-align: center;
 }
+
+@media (max-width: 756px) {
+  .activity-list {
+    flex-direction: column;
+  }
+  .activity-item {
+    width: 100%;
+  }
+  .pr-list {
+    flex-direction: column;
+  }
+  .pr-item {
+    width: 100%;
+  }
+}
