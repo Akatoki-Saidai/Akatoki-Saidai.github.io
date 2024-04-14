@@ -174,7 +174,7 @@
 .sns-icon-list {
   list-style: none;
   padding: 0;
-  margin: 0 10%;
+  margin: 0.5rem 10%;
   width: 80%;
   display: flex;
 }
@@ -276,6 +276,7 @@
 .pr-item {
   width: 48%;
   aspect-ratio: 16 / 9;
+  margin: 0.5rem 0;
 }
 
 .form {
