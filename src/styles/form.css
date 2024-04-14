@@ -145,3 +145,45 @@
   color: #fff;
   background-color: #6f6f6f;
 }
+
+@media (max-width: 1224px) {
+  .main-container {
+    padding: 56px 25% 4rem 25%;
+  }
+}
+
+@media (max-width: 978px) {
+  .main-container {
+    padding: 56px 20% 4rem 20%;
+  }
+}
+
+@media (max-width: 814px) {
+  .main-container {
+    padding: 56px 15% 4rem 15%;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-container {
+    padding: 56px 4rem 4rem 3rem;
+  }
+  .kanji-name-container {
+    flex-direction: column;
+  }
+  .kanji-sei-container,.kanji-mei-container {
+    width: 100%;
+  }
+  .kana-name-container {
+    flex-direction: column;
+  }
+  .kana-sei-container, .kana-mei-container {
+    width: 100%;
+  }
+  .phone-number-container {
+    flex-direction: column;
+  }
+  .mobile-number-container, .emergency-number-container {
+    width: 100%;
+  }
+}

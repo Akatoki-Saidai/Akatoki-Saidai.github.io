@@ -1,6 +1,5 @@
 .main-container {
   padding: 56px 30% 1rem 30%;
-  width: 40%;
 }
 
 .content-title {
@@ -78,7 +77,7 @@
 }
 
 .schedule-content h2 {
-  height: 48px;
+  height: auto;
   line-height: 48px;
   margin: 0;
   font-size: 18px;
@@ -91,4 +90,16 @@
 
 .schedule-content time {
   font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 1248px) {
+  .main-container {
+    padding: 56px 20% 1rem 20%;
+  }
+}
+
+@media (max-width: 828px) {
+  .main-container {
+    padding: 56px 10% 1rem 10%;
+  }
 }
