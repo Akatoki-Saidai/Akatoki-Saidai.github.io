@@ -2,5 +2,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://akatoki-saidai.github.io'
+  site: 'https://akatoki-saidai.github.io',
+  base: '/'
 });
