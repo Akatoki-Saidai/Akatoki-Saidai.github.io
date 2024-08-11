@@ -1,0 +1,41 @@
+.main-container {
+  padding: 56px 0;
+  margin: auto;
+  width: 512px;
+}
+
+@media (max-width: 620px) {
+  .main-container {
+    width: auto;
+    margin: 0 48px;
+  }
+}
+
+.content-title {
+  position: relative;
+  padding-top: 10px;
+  text-align: center;
+  color: #6f6f6f;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.content-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  border-top: 5px solid #6f6f6f;
+}
+
+.about-safety-description {
+  margin-top: 0;
+  color: #6f6f6f;
+  line-height: 32px;
+}
+
+.about-safety-description > a {
+  color: #6f6f6f;
+}
