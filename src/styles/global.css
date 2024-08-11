@@ -151,6 +151,15 @@ header {
   fill: #d31444;
 }
 
+.footer-safety {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-safety > a {
+  color: #fff;
+}
+
 .footer-credit {
   color: #fff;
   width: 100%;
