@@ -4,21 +4,21 @@
 
 .content-title {
   position: relative;
-  padding-top: 10px;
+  padding-bottom: .6em;
   text-align: center;
   color: #6f6f6f;
   font-weight: 700;
   font-size: 2rem;
 }
 
-.content-title::before {
+.content-title::after {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100px;
-  border-top: 5px solid #6f6f6f;
+  width: 33vw;
+  border-top: 2px solid #6f6f6f;
 }
 
 .form-title {
@@ -108,10 +108,31 @@
 }
 
 .constitution-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 6rem;
+  display: block;
+  margin: 1.6em 0;
+}
+
+.constitution-container a{
+  position: relative;
+  display: block;
+  padding-left: 1.6em;
+  padding-bottom: .6em;
+}
+
+.constitution-container a::before{
+  content: '';
+  position: absolute;
+  top: .5rem;
+  left: 0;
+  width: .5em;
+  height: .5em;
+  border-top: solid 2px #495057;
+  border-right: solid 2px #495057;
+  transform: rotate(45deg);
+}
+
+.checkbox-contasiner{
+  margin-top: .6em;
 }
 
 .submit-button {
