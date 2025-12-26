@@ -1,9 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/article.css";
+import type { MarkdownInstance } from 'astro';
+interface Frontmatter {
+    title: string;
+    description?: string;
+    pubDate: string;
+    tags: string[];
+}
 
 const pageTitle = "記事一覧 | 埼玉大学宇宙工学サークルあかとき";
-const postList = await Astro.glob("../pages/posts/*.md");
+const postList = Object.values(import.meta.glob<MarkdownInstance<Frontmatter>>('./posts/**/*.md', { eager: true }));
 ---
 
 <Layout pageTitle={pageTitle}>
