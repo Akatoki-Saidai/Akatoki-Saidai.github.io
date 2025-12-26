@@ -20,7 +20,7 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
         <h2 class="home-subtitle">Have a Dream</h2>
       </div>
     </section>
-    
+
     <section>
       <h1 class="content-title">どんなサークルなの？</h1>
       <p class="content-description">
@@ -184,3 +184,19 @@ const pageTitle = "埼玉大学宇宙工学サークルあかとき";
     </section>
   </main>
 </Layout>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const subtitles = document.querySelectorAll(".home-subtitle");
+    let currentIndex = 0;
+
+    function updateSubtitle() {
+      subtitles.forEach((el) => el.classList.remove("is-animated"));
+
+      subtitles[currentIndex].classList.add("is-animated");
+
+      currentIndex = (currentIndex + 1) % subtitles.length;
+    }
+    updateSubtitle();
+    setInterval(updateSubtitle, 2000);
+  });
+</script>
