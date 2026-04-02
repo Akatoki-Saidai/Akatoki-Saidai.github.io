@@ -4,21 +4,21 @@
 
 .content-title {
   position: relative;
-  padding-top: 10px;
+  padding-bottom: .6em;
   text-align: center;
   color: #6f6f6f;
   font-weight: 700;
   font-size: 2rem;
 }
 
-.content-title::before {
+.content-title::after {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100px;
-  border-top: 5px solid #6f6f6f;
+  border-top: 2px solid #6f6f6f;
 }
 
 .about-container {
