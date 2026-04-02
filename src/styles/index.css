@@ -1,4 +1,5 @@
 .main-container {
+  position: relative;
   padding-top: 56px;
 }
 
@@ -143,6 +144,8 @@
   color: #6f6f6f;
   line-height: 32px;
 }
+
+
 
 .sns-icon-list {
   list-style: none;

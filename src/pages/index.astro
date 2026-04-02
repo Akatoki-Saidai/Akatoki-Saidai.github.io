@@ -1,12 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/index.css";
+import "../styles/banner.css";
 
 const pageTitle = "埼玉大学宇宙工学サークルあかとき";
 ---
 
 <Layout pageTitle={pageTitle}>
   <main class="main-container">
+    <div class="shinkan__banner">
+      <div class="shinkan__banner--inner">
+        <a href="/shinkan/" class="shinkan__banner--item">新歓実施中!</a>
+      </div>
+    </div>
     <section class="home">
       <div class="bg bg1"></div>
       <div class="bg bg2"></div>
