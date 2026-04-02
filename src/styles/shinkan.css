@@ -1,5 +1,9 @@
 .main-container {
-  padding: 56px 30% 1rem 30%;
+  padding: 56px 30% 0 30%;
+}
+
+.schedule{
+  margin-bottom: 10vh;
 }
 
 .content-title {
